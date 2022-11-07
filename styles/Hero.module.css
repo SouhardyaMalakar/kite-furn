@@ -136,7 +136,8 @@
   height: 280px;
   text-align: right;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
+  color: white;
 }
 
 .contentContainer {

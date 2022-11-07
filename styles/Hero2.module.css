@@ -11,6 +11,8 @@
   width: 47%;
   background-color: rgb(240, 240, 240);
   transition: 2s ease-in-out;
+  padding: 50px;
+
 }
 .hero2A:hover,
 .hero2B:hover {
@@ -31,6 +33,7 @@
 
 .stairTextContainer {
   text-align: right;
+  margin-left: -200px;
 }
 
 .stairTextContent {
@@ -67,12 +70,12 @@
 }
 
 .imgStairs {
-  z-index: 30;
+  /* z-index: 30;
   position: absolute;
   height: 620px;
-  left: 0px;
-  top: 0px;
   transition: 2s ease-in-out;
+  margin-right: -100px; */
+  /* border: 10px solid red; */
 }
 
 .stairDisp {
