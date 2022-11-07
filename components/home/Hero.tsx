@@ -8,20 +8,16 @@ const Hero = () => {
     <div className="fluid-container">
       <div className={`${styles.heroBase}`}>
         <div className={styles.heroSpaceBgLeft}>
-          {/* <Image
-            width="500"
-            height="500"
-            src="/images/home/hero1_wardrobe/base.png"
-            className={styles.heroSpaceImage}
+          <img
+            src="/images/home/hero1_wardrobe/door2.png"
+            className={styles.heroSpaceImageDoor2}
             alt="We do space saving furniture and sliding wardrobes at Coimbatore, Erode, Tiruppur, Ooty, Salem in TamilNadu"
-          /> */}
-
-          <Image
-            width="400"
-            height="400"
+          />
+          <img
             src="/images/home/hero1_wardrobe/door.png"
             className={styles.heroSpaceImageDoor}
             alt="Sliding wardrobes are good option for small apartments."
+            
           />
         </div>
 
