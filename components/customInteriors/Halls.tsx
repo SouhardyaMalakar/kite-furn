@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import styles from '../../styles/Halls.module.css';
+import custom from '../../styles/CustomisedInt.module.css';
 
 const content = {
   subTitle: 'Make a lasting memory…',
@@ -36,7 +37,7 @@ const content = {
 function Hotels() {
   return (
     <div className="fluid-container halls-base" id="halls">
-      <div className="halls-grid-container">
+      <div className="halls-grid-container" style={{display : 'flex', flexDirection: 'column'}}>
         <div id="ha" className="halls-title-container">
           <div className="halls-title">Mandaps, Halls and Banquets</div>
           <div className="halls-subtext">
@@ -44,60 +45,70 @@ function Hotels() {
           </div>
           <div className="halls-content">{content.subtext}</div>
         </div>
-        <div id="hb">
+        <div style ={{display: 'flex', flexDirection : "row" ,  flexWrap:"wrap", width:"101%"}} >
+        <div id="hb" style={{width : '600px' , margin:"10px"}}>
           <Image
-            width="300"
-            height="200"
+            className={custom.customImg}
+            width="550"
+            height="400"
             alt={content.imgA.alt}
             src="/images/customInteriors/halls/A.jpg"
           />
-          <div className="customInteriors-img-overlay">
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgA.front}
           </div>
         </div>
-        <div id="hc">
+        <div id="hc" style={{width : '600px', margin:"10px"}}>
           <Image
-            width="300"
-            height="200"
+            className={custom.customImg}
+            width="550"
+            height="400"
             alt={content.imgB.alt}
             src="/images/customInteriors/halls/B.jpg"
           />
-          <div className="customInteriors-img-overlay">
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgB.front}
           </div>
         </div>
-        <div id="hd">
+        <div id="hd" style={{width : '600px', margin:"10px"}}>
           <Image
-            width="300"
-            height="200"
+            className={custom.customImg}
+
+            width="550"
+            height="400"
             alt={content.imgC.alt}
             src="/images/customInteriors/halls/C.jpg"
           />
-          <div className="customInteriors-img-overlay">
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgC.front}
           </div>
         </div>
-        <div id="he">
+        <div id="he" style={{width : '600px', margin:"10px"}}>
           <Image
-            width="300"
-            height="200"
+            className={custom.customImg}
+
+            width="550"
+            height="400"
             alt={content.imgD.alt}
             src="/images/customInteriors/halls/D.jpg"
           />
-          <div className="customInteriors-img-overlay">
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgD.front}
           </div>
         </div>
-        <div id="hf">
+        <div id="hf" style={{width : '600px', margin:"10px"}}>
           <Image
-            width="300"
-            height="200"
+            className={custom.customImg}
+
+            width="550"
+            height="400"
             alt={content.imgE.alt}
             src="/images/customInteriors/halls/E.jpg"
           />
-          <div className="customInteriors-img-overlay">
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgE.front}
           </div>
+        </div>
         </div>
       </div>
     </div>

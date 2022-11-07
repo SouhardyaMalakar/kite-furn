@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from '../../styles/Residence.module.css';
+import styles from '../../styles/CustomisedInt.module.css';
 
 const content = {
   subTitle: 'Beauty & Functionality',
@@ -30,49 +30,53 @@ const content = {
 
 function Residence() {
   return (
-    <div className="fluid-container residences-base" id="residence">
-      <div className="residencesA">
-        <div>
+    <div className="fluid-container residences-base" id="residence"  >
+      <div className="residencesA" style ={{display: 'flex',  flexWrap:"wrap" }}>
+        <div style={{width : '600px'}}>
           <Image
-            width="300"
-            height="200"
+           className={styles.customImg}
+            width="550"
+            height="300"
             src="/images/customInteriors/residence_interiors/A.jpg"
             alt={content.imgA.alt}
           />
-          <div className="customInteriors-img-overlay">
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgA.front}
           </div>
         </div>
-        <div>
+        <div style={{width : '600px'}}>
           <Image
-            width="300"
-            height="200"
+           className={styles.customImg}
+           width="550"
+           height="300"
             src="/images/customInteriors/residence_interiors/B.jpg"
             alt={content.imgB.alt}
           />
-          <div className="customInteriors-img-overlay">
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgB.front}
           </div>
         </div>
-        <div>
+        <div style={{width : '600px'}}>
           <Image
-            width="300"
-            height="200"
+           className={styles.customImg}
+           width="550"
+           height="300"
             src="/images/customInteriors/residence_interiors/C.jpg"
             alt={content.imgC.alt}
           />
-          <div className="customInteriors-img-overlay">
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgC.front}
           </div>
         </div>
-        <div>
+        <div style={{width : '600px'}}>
           <Image
-            width="300"
-            height="200"
+           className={styles.customImg}
+           width="550"
+           height="300"
             src="/images/customInteriors/residence_interiors/D.jpg"
             alt={content.imgD.alt}
           />
-          <div className="customInteriors-img-overlay">
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgD.front}
           </div>
         </div>

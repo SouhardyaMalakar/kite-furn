@@ -39,18 +39,20 @@ function Eateries() {
   return (
     <div className={`fluid-container ${styles.eateriesBase}`} id="eateries">
       <div className={styles.eatGridContainer}>
-        <div id="e1">
+        <div id="e1" style={{ width: '550px'}}>
           <Image
-            width="300"
-            height="200"
+            className={styles.resImg}
+
+            width="500"
+            height="400"
             src="/images/customInteriors/eateries_bakeries/A.JPG"
             alt={content.imgA.alt}
           />
-          <div className={styles.customInteriorsImgOverlay}>
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgA.front}
           </div>
         </div>
-        <div id="e2" className={styles.eatTitleContainer}>
+        <div id="e2" style={{ width: '550px', margin:"20px"}}>
           <div className={styles.eateriesTitle}>
             Restaurants Bakeries &amp; more
           </div>
@@ -59,47 +61,54 @@ function Eateries() {
           </div>
           <div className={styles.eateriesContent}>{content.subtext}</div>
         </div>
-        <div id="e3">
+        <div id="e3" style={{ width: '550px', margin:"20px"}}>
           <Image
-            width="300"
-            height="200"
+            className={styles.resImg}
+
+            width="500"
+            height="400"
             src="/images/customInteriors/eateries_bakeries/B.JPG"
             alt={content.imgB.alt}
           />
-          <div className={styles.customInteriorsImgOverlay}>
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgB.front}
           </div>
         </div>
-        <div id="e4">
+        <div id="e4" style={{ width: '550px', margin:"20px"}}>
           <Image
-            width="300"
-            height="200"
+            className={styles.resImg}
+
+            width="500"
+            height="300"
             src="/images/customInteriors/eateries_bakeries/C.JPG"
             alt={content.imgC.alt}
           />
-          <div className={styles.customInteriorsImgOverlay}>
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgC.front}
           </div>
         </div>
-        <div id="e5">
+        <div id="e5" style={{ width: '550px', margin:"20px"}}>
           <Image
-            width="300"
-            height="200"
+            className={styles.resImg}
+
+            width="500"
+            height="300"
             src="/images/customInteriors/eateries_bakeries/D.JPG"
             alt={content.imgD.alt}
           />
-          <div className={styles.customInteriorsImgOverlay}>
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgD.front}
           </div>
         </div>
-        <div id="e6">
+        <div id="e6" style={{ width: '550px', margin:"20px"}}>
           <Image
-            width="300"
-            height="200"
+            className={styles.resImg}
+            width="500"
+            height="300"
             src="/images/customInteriors/eateries_bakeries/E.JPG"
             alt={content.imgE.alt}
           />
-          <div className={styles.customInteriorsImgOverlay}>
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgE.front}
           </div>
         </div>

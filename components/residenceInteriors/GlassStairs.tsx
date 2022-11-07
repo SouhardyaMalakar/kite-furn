@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
-import styles from '../../styles/GlassStairs.module.css';
+
+import custom from '../../styles/CustomisedInt.module.css';import styles from '../../styles/GlassStairs.module.css';
 
 const GlassStairs = () => {
   return (
@@ -24,11 +25,11 @@ const GlassStairs = () => {
         <div className={`col-sm ${styles.resGsElement}`}>
           <div className={`${styles.resGsImgContainer}`}>
             <Image
-              width="300"
-              height="200"
+            className={custom.customImg}
+              width="400"
+              height="300"
               src="/images/residenceInteriors/glassStairs/A.jpg"
               alt=""
-              className={styles.resGsImg}
             />
           </div>
         </div>
@@ -52,11 +53,11 @@ const GlassStairs = () => {
         <div className={`${styles.resGsElement} col-sm`}>
           <div className={`${styles.resGsImgContainer} img-fluid`}>
             <Image
-              width="300"
-              height="200"
+            className={custom.customImg}
+              width="400"
+              height="300"
               src="/images/residenceInteriors/glassStairs/B.jpg"
               alt=""
-              className={styles.resGsImg}
             />
           </div>
         </div>

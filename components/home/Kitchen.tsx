@@ -17,8 +17,8 @@ function CustomisedInt() {
       <div className={styles.kitchenA}>
         <div>
           <Image
-            width="300"
-            height="200"
+            width="400"
+            height="300"
             className={`${styles.kitchenImg} img-fluid`}
             src="/images/home/kitchen/kitchen1.jpg"
             alt={content.imgA.alt}
@@ -26,8 +26,8 @@ function CustomisedInt() {
         </div>
         <div>
           <Image
-            width="300"
-            height="200"
+            width="400"
+            height="300"
             className={`${styles.kitchenImg} img-fluid`}
             src="/images/home/kitchen/kitchen2.jpg"
             alt={content.imgB.alt}

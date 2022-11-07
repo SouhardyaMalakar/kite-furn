@@ -6,7 +6,7 @@ const Hotels = () => {
   return (
     <div className={`fluid-container ${styles.hotelsBase}`} id="hotels">
       <div className={styles.hotelsContainer}>
-        <div className={styles.hotelsGridContainer}>
+        <div className={styles.hotelsGridContainer} style={{ display: 'flex', flexDirection: 'column'}}>
           <div className={styles.itemA}>
             <div className={styles.hotelsTitle}>Hotel Interiors</div>
             <div className={styles.hotelsContent}>
@@ -16,62 +16,73 @@ const Hotels = () => {
               attractive and beneficial to visitors.
             </div>
           </div>
-          <div className={`${styles.itemB} ${styles.gridItem}`}>
+          <div style={{ display: 'flex', flexWrap:"wrap"}}>
+          <div className={`${styles.itemB} ${styles.gridItem}`}  style={{padding:"20px"}}>
             <Image
-              width="300"
-              height="200"
+              className={styles.customImg}
+              width="550"
+              height="400"
               src="/images/customInteriors/hotels/A.jpg"
               alt="Reception and reception table with wall paneling in glass."
             />
-            <div className={styles.customInteriorsImgOverlay}>
+            <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
               This stunning and beautiful lobby makes the hotel memorable and a
               guest would be delighted to go through it.
             </div>
           </div>
-          <div className={`${styles.itemC} ${styles.gridItem}`}>
+          <div className={`${styles.itemC} ${styles.gridItem}`}  style={{padding:"20px"}}>
             <Image
-              width="300"
-              height="200"
+              className={styles.customImg}
+              width="550"
+              height="400"
               src="/images/customInteriors/hotels/B.jpg"
               alt="Cozy guest room interiors with walnut and teakwood cot."
             />
-            <div className={styles.customInteriorsImgOverlay}>
+            <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
               Guest room should be functional, attractive, luxurious and
               comforting as in this room.
             </div>
           </div>
-          <div className={`${styles.itemD} ${styles.gridItem}`}>
+          <div className={`${styles.itemD} ${styles.gridItem}`}  style={{padding:"20px"}}>
             <Image
-              width="300"
-              height="200"
+              className={styles.customImg}
+              width="550"
+              height="400"
               src="/images/customInteriors/hotels/C.jpg"
               alt="Reception with custom built wooden light fixture."
             />
-            <div className={styles.customInteriorsImgOverlay}>
+            <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
               This business class hotel{"'"}s lobby also doubles as a place for
               casual meetings.
             </div>
           </div>
-          <div className={`${styles.itemE} ${styles.gridItem}`}>
+          <div className={`${styles.itemE} ${styles.gridItem}`}  style={{padding:"20px"}}>
             <Image
-              width="300"
-              height="200"
+              className={styles.customImg}
+              width="550"
+              height="400"
               src="/images/customInteriors/hotels/D.jpg"
               alt="Guest bedroom with twin cot, which can be converted to double bed."
             />
-            <div className={styles.customInteriorsImgOverlay}>
+            <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
               This spacious guestroom is exotically cozy for its guests.
             </div>
           </div>
-        </div>
+          <div className={`${styles.itemE} ${styles.gridItem}`}  style={{padding:"20px"}}>
+            <Image
+              className={styles.customImg}
+              width="550"
+              height="400"
+              src="/images/customInteriors/hotels/roomNumber.jpg"
+            alt="We have best interior and furniture products for hotels"
+            />
+            <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
+              This spacious guestroom is exotically cozy for its guests.
+            </div>
+          </div>
+          </div>
 
-        <Image
-          width="300"
-          height="200"
-          src="/images/customInteriors/hotels/roomNumber.jpg"
-          className={styles.imgRoomNumber}
-          alt="We have best interior and furniture products for hotels"
-        />
+        </div>
       </div>
     </div>
   );

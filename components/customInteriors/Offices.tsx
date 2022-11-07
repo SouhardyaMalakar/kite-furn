@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import styles from '../../styles/Office.module.css';
+import custom from '../../styles/CustomisedInt.module.css';
 
 const content = {
   subtext:
@@ -25,43 +26,48 @@ const content = {
 function Offices() {
   return (
     <div className="fluid-container offices-base" id="offices">
-      <div className="offices-grid-container">
+      <div className="offices-grid-container"  style ={{display: 'flex', flexDirection:"column"  }}>
         <div className="title gridItem">
           <div className="offices-title">OFFICE SPACES</div>
           <div className="offices-content">{content.subtext}</div>
         </div>
-        <div className="longImg gridItem">
+        <div className="longImg gridItem" style ={{display: 'flex',  flexWrap:"wrap" }}>
+          <div style={{width : '600px'}}>
           <Image
-            width="300"
-            height="200"
+          className={custom.customImg}
+            width="500px"
+            height="400px"
             src="/images/customInteriors/offices/A.jpg"
             alt={content.imgA.alt}
           />
-          <div className="customInteriors-img-overlay">
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'50px'}}>
             {content.imgA.front}
           </div>
-        </div>
-        <div className="imgA gridItem">
+          </div>
+        <div className="imgA gridItem" style={{width : '600px'}}>
           <Image
-            width="300"
-            height="200"
+          className={custom.customImg}
+            width="500"
+            height="400"
             src="/images/customInteriors/offices/B.jpg"
             alt={content.imgB.alt}
           />
-          <div className="customInteriors-img-overlay">
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}} >
             {content.imgB.front}
           </div>
         </div>
-        <div className="imgB gridItem">
+        <div className="imgB gridItem" style={{width : '600px'}}>
           <Image
-            width="300"
-            height="200"
+          className={custom.customImg}
+            width="500"
+            height="400"
             src="/images/customInteriors/offices/C.jpg"
             alt={content.imgC.alt}
           />
-          <div className="customInteriors-img-overlay">
+          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}} >
             {content.imgC.front}
           </div>
+        </div>
         </div>
       </div>
     </div>
