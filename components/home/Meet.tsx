@@ -67,6 +67,7 @@ function Meet() {
           <div className={styles.meetLeftImages}>
             <div>
               <Image
+              height={'330px'}
                 src={mb}
                 className={styles.meetLeftImg}
                 id="img-L-A"
@@ -74,7 +75,10 @@ function Meet() {
               />
             </div>
             <div>
+
               <Image
+              height={'330px'}
+
                 src={ma}
                 className={styles.meetLeftImg}
                 alt={content.imgE.alt}
@@ -88,6 +92,7 @@ function Meet() {
             <div>
               <div className={styles.imgContainer}>
                 <Image
+                  height={'800px'}
                   src={customImages[0]}
                   id="mm-img"
                   alt={content.imgB.alt}
@@ -105,6 +110,7 @@ function Meet() {
             <div>
               <div className={styles.imgContainer}>
                 <Image
+                height={'950px'}
                   src={customImages[1]}
                   id="vinoth"
                   alt={content.imgC.alt}
@@ -120,6 +126,7 @@ function Meet() {
             <div>
               <div className={styles.imgContainer}>
                 <Image
+                height={'1100px'}
                   src={customImages[2]}
                   id="sajeesh"
                   alt={content.imgD.alt}
@@ -135,6 +142,7 @@ function Meet() {
             <div>
               <div className={styles.imgContainer}>
                 <Image
+                height={'950px'}
                   src={customImages[3]}
                   id="prabhu"
                   alt={content.imgE.alt}
@@ -149,7 +157,7 @@ function Meet() {
             </div>
             <div>
               <div className={styles.imgContainer} id="harini">
-                <Image src={customImages[4]} alt={content.imgF.alt} />
+                <Image height={'600px'} src={customImages[4]} alt={content.imgF.alt} />
               </div>
               <div className={styles.meetImgCard}>
                 <div className={styles.personName}>Harini</div>
