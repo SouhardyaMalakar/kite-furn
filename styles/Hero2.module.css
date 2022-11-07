@@ -1,0 +1,591 @@
+.hero2Base {
+  height: 70vh;
+  display: flex;
+  background-color: #8da5a2;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero2A {
+  height: 100%;
+  width: 47%;
+  background-color: rgb(240, 240, 240);
+  transition: 2s ease-in-out;
+}
+.hero2A:hover,
+.hero2B:hover {
+  width: 100%;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  height: 60%;
+  padding-top: 4rem;
+}
+.hero2B {
+  height: 100%;
+  width: 53%;
+  position: relative;
+  transition: 2s ease-in-out;
+}
+
+.stairTextContainer {
+  text-align: right;
+}
+
+.stairTextContent {
+  color: #546866;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  width: 50%;
+  float: right;
+  text-align: justify;
+  padding-right: 3rem;
+  font-weight: 300;
+}
+
+.contentStairTop {
+  color: #3e7e78;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  line-height: 0.8;
+  font-size: 100px !important;
+  padding-bottom: 5px;
+}
+
+.contentStairBottomContainer {
+  color: #9ecac7;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: clamp(3rem, 15vw, 2.5rem);
+  padding-bottom: 5px;
+  line-height: 1.2;
+}
+
+.highlightA {
+  color: #89b3b0;
+}
+
+.imgStairs {
+  z-index: 30;
+  position: absolute;
+  height: 620px;
+  left: 0px;
+  top: 0px;
+  transition: 2s ease-in-out;
+}
+
+.stairDisp {
+  display: none;
+}
+
+.btnStairs {
+  padding: 5px 30px !important;
+  font-size: 25px !important;
+  font-weight: 500;
+  margin-top: 10px;
+  border-radius: 5px !important;
+  background-color: #5e9bc7 !important;
+  border: none !important;
+  color: #ffffff !important;
+  transition: all 0.4s;
+}
+
+.btnStairs:hover {
+  background-color: #4a7197 !important;
+  color: #e4dcd4;
+  transition: all 0.4s;
+}
+
+.respShow {
+  display: none;
+}
+
+.respShow2 {
+  display: none;
+}
+
+.bedTextContainer {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  z-index: 40;
+}
+
+.bedTextTop {
+  color: #ececec;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  line-height: 1.03;
+  font-size: 100px !important;
+}
+
+.bedTextSubtop {
+  color: #ececec;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 7px;
+  padding-left: 4px;
+  padding-top: 15px;
+  font-size: 29px !important;
+}
+
+.btnBed {
+  font-weight: 500;
+  border: none;
+  color: #ffffff;
+  padding: 3px 30px !important;
+  font-size: 30px !important;
+  font-weight: 500;
+  border-radius: 50px !important;
+  color: #1faaa0 !important;
+
+  margin-top: 50px;
+  transition: all 0.4s;
+}
+
+.btnBed:hover {
+  color: #1d837c !important;
+  transition: all 0.4s;
+}
+
+.bedTextContent {
+  color: #e7e7e7e0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  width: 460px;
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.bedLowlight {
+  color: #dddddd;
+  opacity: 0.5;
+}
+
+/*Overall Breakpoints*/
+@media (max-width: 1500px) {
+  .hero2A {
+    display: block;
+    width: 100%;
+    height: 640px;
+  }
+
+  .hero2B {
+    display: block;
+    width: 100%;
+    height: 665px;
+  }
+
+  .hero2Base {
+    height: auto;
+    display: block;
+  }
+}
+
+/*Breakpoints for the stairs section*/
+@media (max-width: 1770px) {
+  .imgStairs {
+    height: 620px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .contentStairTop {
+    font-size: 90px !important;
+    margin-top: -5px;
+  }
+
+  .stairTextContent {
+    width: 350px;
+    bottom: 30px;
+  }
+
+  .contentStairBottomContainer {
+    font-size: 40px !important;
+  }
+
+  .btnStairs {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1670px) {
+  .imgStairs {
+    left: 0px;
+  }
+
+  .stairTextContent {
+    width: 290px;
+    bottom: 30px;
+    right: 23px;
+  }
+
+  .btnStairs {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 850px) {
+  .contentStairTop {
+    font-size: 80px !important;
+    margin-top: -15px;
+  }
+
+  .contentStairBottomContainer {
+    font-size: 35px !important;
+    padding-top: 25px;
+  }
+
+  .imgStairs {
+    height: 560px;
+  }
+
+  .hero2A {
+    height: 590px;
+  }
+}
+
+@media (max-width: 690px) {
+  .stairTextContainer {
+    top: 40px;
+    left: 0;
+    right: 20px;
+  }
+
+  .contentStairBottomContainer {
+    font-size: 30px !important;
+    text-align: right;
+  }
+
+  .contentStairTop {
+    font-size: 65px !important;
+  }
+
+  .imgStairs {
+    top: 0px;
+  }
+
+  .stairTextContent {
+    text-align: center;
+    margin: 0;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .hero2A {
+    height: 715px;
+  }
+
+  .imgStairs {
+    display: none;
+  }
+
+  .stairDisp {
+    display: block;
+  }
+}
+
+@media (max-width: 570px) {
+  .flex {
+    flex-direction: column-reverse;
+  }
+  .contentStairTopContainer {
+    font-size: 40px;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .btnStairs {
+    margin-right: 20px;
+    padding: 6px 20px !important;
+    font-size: 22px !important;
+    margin-top: -5px;
+  }
+}
+
+/*Breakpoints for the Bed section*/
+@media (max-width: 1895px) {
+  .bedFade {
+    top: 73px;
+    right: -20px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 1770px) {
+  .bedFade {
+    top: 30px;
+    right: -20px;
+    height: 550px;
+  }
+
+  .bedTextTop {
+    font-size: 85px !important;
+  }
+
+  .bedTextContent {
+    width: 430px;
+    bottom: 30px;
+  }
+
+  .respShow {
+    display: block !important;
+  }
+
+  .bedTextTop {
+    display: none;
+  }
+
+  .bedTextSubtop {
+    width: 300px;
+  }
+
+  .btnBed {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .bedTextContent {
+    width: 430px;
+    bottom: 30px;
+  }
+
+  .btnBed {
+    margin-top: 30px;
+    font-size: 26px !important;
+  }
+}
+
+@media (max-width: 1500px) {
+  .bedFade {
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    height: 700px;
+    width: auto;
+  }
+
+  .bedTextContent {
+    left: 20px;
+    margin-top: 50px;
+    width: 450px;
+  }
+
+  .btnBed {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .bedFade {
+    top: 15px;
+    height: 560px;
+    right: -15px;
+  }
+
+  .bedTextContent {
+    width: 50vw;
+    bottom: 25px;
+  }
+
+  .btnBed {
+    margin-top: 35px;
+  }
+
+  .hero2B {
+    display: block;
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@media (max-width: 920px) {
+  .bedFade {
+    top: 30px;
+    height: 530px;
+  }
+
+  .bedTextContent {
+    width: 52vw;
+    bottom: 30px;
+  }
+
+  .hero2B {
+    height: 640px;
+  }
+}
+
+@media (max-width: 790px) {
+  .hero2B {
+    height: 550px;
+  }
+
+  .bedTextContent {
+    width: 280px;
+    left: 20px;
+  }
+
+  .respShow {
+    display: none !important;
+  }
+
+  .respShow2 {
+    display: block;
+  }
+
+  .bedTextTop {
+    font-size: 10vw !important;
+  }
+
+  .bedTextSubtop {
+    width: auto;
+    padding-top: 10px;
+  }
+
+  .btnBed {
+    margin-top: 30px;
+  }
+
+  .bedFade {
+    height: 500px;
+    top: 100px;
+  }
+}
+
+@media (max-width: 760px) {
+  .bedTextContent {
+    width: 250px;
+    bottom: 20px;
+  }
+
+  .hero2B {
+    height: 580px;
+  }
+
+  .bedFade {
+    height: 450px;
+  }
+}
+
+@media (max-width: 690px) {
+  .bedTextContent {
+    width: auto;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    bottom: 30px;
+  }
+
+  .hero2B {
+    height: 670px;
+  }
+
+  .bedFade {
+    height: 510px;
+    top: 90px;
+  }
+}
+
+@media (max-width: 650px) {
+  .bedTextContent {
+    width: auto;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    bottom: 30px;
+  }
+
+  .hero2B {
+    height: 780px;
+  }
+
+  .bedFade {
+    height: 510px;
+    top: 160px;
+    left: -15px;
+    right: 0;
+
+    transform: rotateY(180deg);
+  }
+
+  .bedTextSubtop {
+    font-size: 4.5vw !important;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Stairs */
+
+  .contentStairTop {
+    font-size: 12vw !important;
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .contentStairBottomContainer {
+    font-size: 5.5vw !important;
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .btnStairs {
+    font-size: 19px !important;
+    margin-top: 15px;
+    padding: 5px 15px !important;
+  }
+
+  .imgStairs {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .stairTextContent {
+    font-size: 16px;
+    padding-top: 5rem;
+  }
+
+  /* Bed Stuff */
+
+  .bedTextContainer {
+    position: static;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+
+  .bedFade {
+    height: 105vw;
+    top: -75px;
+  }
+
+  .btnBed {
+    font-size: 20px !important;
+    margin-top: 10px;
+  }
+
+  .bedTextContent {
+    font-size: 16px !important;
+    position: static;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: -130px;
+    padding-bottom: 10px;
+  }
+
+  .bedTextContainer {
+    top: 15px;
+  }
+
+  .bedTextSubtop {
+    padding: 0;
+  }
+}

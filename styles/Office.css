@@ -1,0 +1,146 @@
+.offices-base {
+    padding: 40px 35px;
+    height: fit-content;
+    background-color: rgb(211, 211, 212);
+}
+
+.offices-grid-container {
+    display: grid;
+    grid-template-columns: auto auto 25%;
+    grid-template-rows: auto 65%;
+    grid-gap: 20px;
+}
+
+.title {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    position: relative;
+}
+
+.longImg {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+}
+
+
+.offices-content {
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+    text-align: left;
+    padding-right: 700px;
+    padding-top: 5px;
+}
+
+.offices-title {
+    font-size: 90px;
+    text-align: left;
+    line-height: 0.8;
+    padding-bottom: 20px;
+    font-family: 'Open Sans';
+    color: #52ad9a;
+    font-weight: 600;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+}
+
+.gridItem>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media(max-width: 1500px) {
+    .offices-base {
+        padding: 30px 30px;
+    }
+
+    .offices-title {
+        font-size: 80px;
+        position: relative;
+    }
+
+
+    .offices-content {
+        padding-right: 200px;
+    }
+}
+
+@media(max-width: 1300px) {
+    .offices-grid-container {
+        grid-template-columns: 50% auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .title {
+        grid-column: 1 / span 1;
+    }
+
+    .longImg {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 3;
+    }
+
+    .imgA {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .imgB {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .offices-title {
+        line-height: 1;
+        padding: 0;
+    }
+
+    .offices-content {
+        padding-top: 10px;
+        padding-right: 0px;
+    }
+}
+
+@media(max-width: 800px) {
+    .offices-title {
+        font-size: 10vw;
+        letter-spacing: normal;
+    }
+
+    .offices-base {
+        padding: 20px 25px;
+    }
+}
+
+@media(max-width: 700px) {
+    .offices-grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .title {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .longImg {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+
+    .imgA {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .imgB {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .offices-content {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-right: 0px;
+    }
+}

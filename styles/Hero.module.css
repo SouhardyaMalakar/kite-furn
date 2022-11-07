@@ -1,0 +1,421 @@
+.heroBase {
+  background-image: linear-gradient(to left, #247dbe, #71bcf1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mt45 {
+  margin-top: 35px;
+}
+
+@keyframes door-anim {
+  0% {
+    height: 300px;
+    transform: translateX(20px);
+  }
+
+  50% {
+    height: 500px;
+    transform: translateX(10vw);
+  }
+
+  100% {
+    height: 300px;
+    transform: translateX(20px);
+  }
+}
+
+.heroSpaceBgLeft {
+  display: flex;
+  justify-content: space-between;
+  background-image: url('../public/images/home/hero1_wardrobe/base.png');
+  height: 800px;
+  width: 800px;
+  background-clip: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.heroSpaceImageDoor {
+  /*Animation*/
+  animation: door-anim 7s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.heroImageBgRight {
+  z-index: 20;
+  text-align: right;
+  padding: 0 2rem;
+}
+
+.heroText {
+  font-size: 150px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 0.95;
+  background: -webkit-linear-gradient(#79c5fc, #91c9f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heroSubText {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  padding-top: 2rem;
+}
+
+.heroTextMobile {
+  display: none;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 0.95;
+  background: -webkit-linear-gradient(#79c5fc, #91c9f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btnExplore {
+  padding: 5px 30px !important;
+  font-size: 30px !important;
+  font-weight: 500;
+  border-radius: 50px !important;
+  color: #1faaa0 !important;
+}
+
+.btnExplore:hover .btnImg {
+  width: 0;
+  margin-left: 0;
+  transition: all 1s;
+}
+
+.heroBase2 {
+  background-image: linear-gradient(to left, #f1f1f1, #ffffff);
+  padding: 27px 40px;
+  height: 280px;
+  text-align: right;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contentContainer {
+  width: 700px;
+  height: auto;
+  float: right;
+}
+
+.contentTitle {
+  color: #1faaa0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 35px !important;
+  padding-bottom: 5px;
+}
+
+.content {
+  color: #546866;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 800px;
+}
+
+/* Breakpoints */
+
+@media (max-width: 1615px) {
+  .heroText {
+    font-size: 130px;
+    transition: all 0.4s;
+  }
+  .heroSpaceBgLeft {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../public/images/home/hero1_wardrobe/base.png');
+    height: 500px;
+    width: 500px;
+    background-clip: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .heroSpaceImageDoor {
+    /*Animation*/
+    animation: door-anim 7s infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  .heroBase {
+    height: 540px;
+  }
+
+  .content {
+    font-size: 20px;
+  }
+
+  .contentContainer {
+    width: 620px;
+  }
+
+  .btnExplore {
+    margin-top: 12px;
+  }
+
+  .heroSpaceImage {
+    height: 700px;
+  }
+
+  @keyframes door-anim {
+    0% {
+      height: 200px;
+      transform: translateX(20px);
+    }
+
+    50% {
+      height: 400px;
+      transform: translateX(10vw);
+    }
+
+    100% {
+      height: 200px;
+      transform: translateX(20px);
+    }
+  }
+
+  .heroBase2 {
+    height: 240px;
+  }
+}
+
+@media (max-width: 1215px) {
+  .heroText {
+    font-size: 90px;
+    transition: all 0.4s;
+  }
+
+  .heroBase {
+    height: 380px;
+  }
+
+  .content {
+    font-size: 17.5px;
+  }
+
+  .contentContainer {
+    width: 470px;
+  }
+
+  .contentTitle {
+    font-size: 23px !important;
+  }
+
+  .btnExplore {
+    margin-top: -5px;
+    font-size: 23px !important;
+  }
+
+  .btnImg {
+    display: none;
+  }
+
+  .heroSpaceImage {
+    height: 500px;
+  }
+
+  @keyframes door-anim {
+    0% {
+      height: 415px;
+      left: 60%;
+      top: 40px;
+    }
+
+    50% {
+      height: 475px;
+      left: 23%;
+      top: 10px;
+    }
+
+    100% {
+      height: 415px;
+      left: 60%;
+      top: 40px;
+    }
+  }
+
+  .heroBase2 {
+    height: 220px;
+  }
+}
+
+@media (max-width: 875px) {
+  .contentContainer {
+    width: 80%;
+  }
+
+  .heroBase {
+    height: 300px;
+  }
+
+  .heroBase2 {
+    height: 290px;
+    padding: 130px 20px 20px 20px;
+    /* text-align: center; */
+  }
+
+  .heroText {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 720px) {
+  .heroText {
+    display: none;
+  }
+
+  .heroTextMobile {
+    display: block;
+  }
+
+  .heroImageBgLeft {
+    top: 90px;
+    left: 30px;
+  }
+
+  .heroBase {
+    height: 300px;
+  }
+
+  .heroBase2 {
+    height: 390px;
+    padding: 240px 20px 0px 20px;
+  }
+
+  .contentContainer {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Phones */
+@media (max-width: 550px) {
+  .heroImageBgLeft {
+    top: 100px;
+  }
+
+  .heroBase2 {
+    padding-top: 250px;
+    height: 430px;
+  }
+}
+
+@media (max-width: 502px) {
+  .heroImageBgLeft {
+    top: 95px;
+    left: 20px;
+  }
+
+  .heroImageBgRight {
+    right: 13px;
+  }
+
+  .heroSpaceImage {
+    height: 300px;
+  }
+
+  .heroSpaceImageDoor {
+    opacity: 0;
+  }
+
+  @keyframes door-anim {
+    0% {
+      height: 250px;
+      left: 60%;
+      top: 23px;
+    }
+
+    50% {
+      height: 280px;
+      left: 30%;
+      top: 10px;
+    }
+
+    100% {
+      height: 250px;
+      left: 60%;
+      top: 23px;
+    }
+  }
+
+  @keyframes door-anim2 {
+    0% {
+      height: 300px;
+      left: 15px;
+      top: 0px;
+    }
+
+    50% {
+      height: 280px;
+      left: 30%;
+      top: 10px;
+    }
+
+    100% {
+      height: 300px;
+      left: 15px;
+      top: 0px;
+    }
+  }
+
+  .heroBase2 {
+    height: 280px;
+    position: relative;
+    padding: 0 0;
+  }
+
+  .contentContainer {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .heroTextMobile {
+    font-size: 30px;
+  }
+
+  .contentTitle {
+    font-size: 20px !important;
+    margin-bottom: 3px;
+  }
+
+  .content {
+    font-size: 16px !important;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .btnExplore {
+    font-size: 16px !important;
+  }
+
+  .mt45 {
+    margin: 0;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 387px) {
+  .heroBase2 {
+    height: 290px;
+  }
+}
+
+@media (max-width: 370px) {
+  .heroImageBgLeft {
+    top: 120px;
+  }
+
+  .heroBase2 {
+    height: 320px;
+  }
+}

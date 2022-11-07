@@ -1,0 +1,67 @@
+.resGlassStairsBase {
+  padding: 40px 35px;
+  background-color: rgb(235, 238, 238);
+  position: relative;
+
+  height: 750px;
+}
+
+.show1300 {
+  display: none !important;
+}
+
+.bootstrapRow {
+  height: 100%;
+  width: 100%;
+
+  margin: 0 !important;
+}
+
+.resGsElement {
+  height: 100%;
+}
+
+.resGsImgContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.resGsImg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.resGsContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resGsTitle {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+  color: #3e7e78;
+}
+
+@media (max-width: 1300px) {
+  .resGlassStairsBase {
+    height: auto;
+    padding: 20px;
+  }
+
+  .rresGsTitle {
+    font-size: 80px;
+  }
+
+  .hide1300 {
+    display: none;
+  }
+
+  .show1300 {
+    display: block !important;
+    padding-bottom: 20px;
+  }
+}

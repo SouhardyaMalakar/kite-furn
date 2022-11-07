@@ -1,0 +1,225 @@
+.retails-base {
+    padding: 40px 35px;
+    height: fit-content;
+    background-color: rgb(233, 221, 221);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.retailsA {
+    width: 60%;
+
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 20px;
+    max-height: 650px;
+    width: auto;
+    padding-right: 30px;
+}
+
+.retailsA>div {
+    position: relative;
+}
+
+.retailsA>div>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.retailsB {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-left: 30px;
+}
+
+.retails-title {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: 'Open Sans';
+    color: #93aa42;
+    line-height: 1;
+    margin-top: -10px;
+}
+
+.retails-subtitles {
+    padding-top: 25px;
+}
+
+.retails-subtitles>div {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.25;
+    font-family: "Open Sans",
+        sans-serif;
+    color: #94aa42c4;
+    text-align: right;
+}
+
+.retails-content {
+    font-size: 22px;
+    color: #485554;
+    max-width: 720px;
+    margin-top: 25px;
+}
+
+
+/* Breakpoints */
+@media(max-width: 1500px) {
+    .retails-title {
+        font-size: 70px;
+    }
+
+    .retailsA {
+        max-height: none;
+    }
+}
+
+@media(max-width: 1350px) {
+    .retails-base {
+        flex-direction: column-reverse;
+    }
+
+    .retailsA {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Title section */
+    .retailsB {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+    .retails-title {
+        text-align: left;
+        padding: 0;
+        max-width: 40%;
+    }
+
+    .retails-subContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .retails-subtitles {
+        padding: 0;
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .retails-subtitles>div {
+        text-align: right;
+    }
+
+    .retails-content {
+        padding: 0;
+        margin-top: 20px;
+        max-width: 75%;
+    }
+}
+
+@media(max-width: 1100px) {
+    .retails-title {
+        max-width: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .retailsB {
+        flex-direction: column;
+    }
+
+    .retails-subContainer {
+        flex-direction: row;
+        padding-top: 25px;
+        align-items: flex-start;
+    }
+
+    .retails-subtitles {
+        min-width: 50%;
+        margin: 0;
+    }
+
+    .retails-subtitles>div {
+        text-align: left;
+    }
+
+    .retails-content {
+        margin: 0;
+        max-width: 95%;
+        padding-left: 10px;
+    }
+}
+
+@media(max-width: 800px) {
+    .retails-subContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .retails-subtitles {
+        padding-top: 10px;
+    }
+
+    .retails-subtitles>div {
+        width: 100%;
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .retails-content {
+        padding: 0;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+        width: 100%;
+        max-width: none;
+    }
+
+    .retailsA {
+        grid-template-rows: repeat(4, minmax(0, 1fr));
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .retails-title {
+        font-size: 9vw;
+    }
+}
+
+@media(max-width: 600px) {
+    .retails-base {
+        padding: 20px 20px;
+    }
+
+    .retails-title {
+        margin-top: 0px;
+    }
+
+    .retailsB {
+        padding-bottom: 15px;
+    }
+
+    .retails-content {
+        font-size: 16px;
+    }
+
+    .retails-subtitles {
+        width: 100%;
+    }
+}

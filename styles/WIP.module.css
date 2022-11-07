@@ -1,0 +1,22 @@
+.residence-base {
+  background-image: linear-gradient(to left, #247dbe, #71bcf1);
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wip-image {
+  height: 400px;
+  width: auto;
+}
+
+.wip-text {
+  font-size: 35px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  line-height: 0;
+
+  color: #c9bcb3;
+  padding-bottom: 55px;
+}

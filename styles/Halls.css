@@ -1,0 +1,149 @@
+.halls-base {
+  padding: 40px 30px;
+  height: fit-content;
+  background-color: rgb(243, 229, 229);
+}
+
+.halls-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 400px;
+  grid-gap: 20px;
+}
+
+.halls-grid-container > div {
+  position: relative;
+}
+
+#ha {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#hb {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.halls-grid-container > div > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.halls-title {
+  text-align: left;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 0.9;
+  font-family: 'Open Sans';
+  color: rgb(187, 138, 64);
+  padding-right: 20px;
+}
+
+.halls-subtext {
+  font-size: 35px;
+  padding-top: 25px;
+  color: rgb(116, 108, 85);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.halls-subtext > div {
+  padding-right: 50px;
+  text-align: left;
+  line-height: 1;
+}
+
+.halls-content {
+  font-size: 20px;
+  color: rgb(44, 44, 44);
+  text-align: left;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+/* Breakpoints */
+@media (max-width: 1400px) {
+  .halls-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(2, minmax(200px, 350px));
+    grid-gap: 20px;
+  }
+
+  #ha {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  #hb {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .halls-base {
+    padding: 25px 30px;
+  }
+
+  .halls-content {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .halls-title {
+    font-size: 65px;
+  }
+
+  .halls-subtext {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .halls-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto repeat(3, minmax(200px, 350px));
+  }
+
+  #ha {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (max-width: 750px) {
+  .halls-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 10px;
+  }
+
+  #ha {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #hb {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .halls-title {
+    font-size: 11vw;
+  }
+
+  .halls-subtext {
+    font-size: 5.5vw;
+  }
+
+  .halls-content {
+    font-size: 16px;
+  }
+
+  .halls-base {
+    padding: 20px 20px;
+  }
+}

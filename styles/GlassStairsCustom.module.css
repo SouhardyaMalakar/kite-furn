@@ -1,0 +1,357 @@
+.glassStairsBase {
+  padding: 40px 35px;
+  background-color: rgb(235, 238, 238);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.glassStairsA {
+  width: auto;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  grid-gap: 40px;
+  padding-left: 10px;
+}
+
+.glassStairsB {
+  width: auto;
+  min-width: 45%;
+  padding: 20px 0;
+  text-align: right;
+}
+
+.imgBContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.glassStairsA > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.glassStairsImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(10px);
+  opacity: 0.7;
+  border-radius: 5px;
+}
+
+.glassStairsImgTop {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  border-radius: 5px;
+}
+
+.glassStairsImgOverlay {
+  position: absolute;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.596) 0%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  bottom: 10px;
+  right: 10px;
+  border-radius: 0 0 5px 5px;
+  color: #ffffff;
+  width: 100%;
+  padding: 10px 30px;
+  padding-top: 60px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.glassStairsTitleContainer > span {
+  font-size: 90px;
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+  color: #3e7e78;
+}
+
+.glassStairsTitleContainer {
+  margin-top: -25px;
+}
+
+.glassStairsSubContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.glassStairsSubtitle > div {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+  font-family: 'Open Sans', sans-serif;
+  color: #8caca8;
+  text-align: right;
+}
+
+.glassStairsSubtitle {
+  margin-top: 25px;
+}
+
+.glassStairsContent {
+  font-size: 22px;
+  color: #485554;
+  max-width: 720px;
+  margin-top: 25px;
+  padding-left: 40px;
+}
+
+.gsB {
+  display: none;
+}
+
+.glassStairsResidenceBtnContainer {
+  margin-top: 40px;
+}
+
+.residenceExtraText {
+  font-size: 21px;
+  color: #6d7a79;
+  padding-bottom: 10px;
+}
+
+.residenceExtraText > span {
+  color: #546866;
+}
+
+.glassStairsBtnToResidence {
+  padding: 5px 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  border: none;
+  background-color: rgb(109, 154, 194);
+  border-radius: 5px;
+  color: #ffffff;
+  transition: all 0.4s;
+}
+
+.glassStairsBtnToResidence:hover {
+  background-color: rgb(127, 174, 216);
+  transition: all 0.3s;
+}
+
+/* Breakpoints */
+@media (max-width: 1600px) {
+  .glassStairsB {
+    min-width: 37%;
+  }
+
+  .glassStairsTitleContainer > span {
+    font-size: 73px;
+  }
+
+  .glassStairsTitleContainer {
+    padding-left: 30px;
+  }
+
+  .glassStairsSubtitle > div {
+    font-size: 30px;
+  }
+
+  .glassStairsContent {
+    font-size: 19px;
+  }
+
+  .residenceExtraText {
+    font-size: 19px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .glassStairsBase {
+    flex-direction: column-reverse;
+    padding: 25px 35px;
+    padding-bottom: 30px;
+  }
+
+  .glassStairsB {
+    padding-top: 0;
+    padding-right: 13px;
+    position: relative;
+  }
+
+  .glassStairsTitleContainer {
+    text-align: left;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .glassStairsSubContainer {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 14px;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .glassStairsSubContainer > div {
+    margin: 0;
+  }
+
+  .glassStairsContent {
+    padding-top: 20px;
+  }
+
+  .glassStairsSubtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    min-width: 50%;
+  }
+
+  .glassStairsSubtitle > div {
+    text-align: left;
+  }
+
+  .glassStairsResidenceBtnContainer {
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  .residenceExtraText {
+    padding: 0;
+    padding-bottom: 5px;
+  }
+
+  .gsA {
+    display: none;
+  }
+
+  .gsB {
+    display: block;
+  }
+
+  .glassStairsTitleContainer > span {
+    display: block;
+    padding-right: 20px;
+  }
+
+  .glassStairsTitleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .glassStairsBtnToResidence {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .glassStairsBase {
+    padding: 20px 20px;
+  }
+
+  .glassStairsA {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .gsA {
+    display: block;
+  }
+
+  .gsB {
+    display: none;
+  }
+
+  .glassStairsTitleContainer {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .glassStairsSubContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .glassStairsSubtitle {
+    align-items: center;
+  }
+
+  .glassStairsContent {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 13px;
+  }
+
+  .glassStairsResidenceBtnContainer {
+    text-align: center;
+    padding-top: 14px;
+  }
+
+  .glassStairsA {
+    grid-gap: 20px;
+    padding-bottom: 30px;
+  }
+
+  .glassStairsB {
+    padding-right: 0;
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .glassStairsTitleContainer > span {
+    font-size: 11vw;
+  }
+
+  .glassStairsSubtitle > div {
+    font-size: 5.5vw;
+  }
+
+  .glassStairsContent {
+    font-size: 16px;
+  }
+
+  .residenceExtraText {
+    font-size: 16px;
+  }
+
+  .glassStairsBtnToResidence {
+    font-size: 16px;
+  }
+
+  .glassStairsB {
+    padding-right: 0;
+  }
+
+  .glassStairsA {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .glassStairsB {
+    padding-bottom: 7px;
+  }
+
+  .glassStairsResidenceBtnContainer {
+    padding-top: 10px;
+  }
+
+  .glassStairsContent {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

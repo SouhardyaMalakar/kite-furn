@@ -1,0 +1,458 @@
+.customisedIntBase {
+  background-image: linear-gradient(to left, #8066665b, #6e645f3f);
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+
+.customHead {
+  width: 35%;
+  height: 100%;
+  padding-top: 0px;
+  padding-left: 30px;
+}
+
+.customGrid {
+  height: 100%;
+  width: auto;
+
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  grid-gap: 20px;
+  padding: 20px;
+  padding-left: 50px;
+}
+
+.gridItem {
+  text-align: center;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+.customImg:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  opacity: 0.5;
+}
+
+.customImg {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  transition: 0.5s ease-in-out;
+}
+
+.customImgOver {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+
+  padding-top: 10px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px !important;
+  color: rgb(194, 194, 194);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.788));
+}
+
+.customTitle {
+  color: #5d7680;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  line-height: 1.1;
+  font-size: 90px !important;
+
+  padding-top: 10px;
+}
+
+.customTitle > div > .highlight {
+  color: #609b9b;
+}
+
+.customSubtag {
+  color: #567272;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  font-size: 22px !important;
+
+  padding-top: 16px;
+}
+
+.btnCustomTypes {
+  border: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  padding: 3px 7px;
+  border-radius: 3px;
+  background-color: #fcf2e7;
+  color: #3f7e7e !important;
+
+  transition: all 0.3s;
+}
+
+.btnCustomTypes:hover {
+  background-color: #d1c8bf;
+  color: #567272;
+  transition: all 0.3s;
+}
+
+.customText {
+  color: #768080;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 20px !important;
+
+  padding-top: 21px;
+}
+
+.btnCustomMain {
+  font-weight: 500;
+  margin-top: 10px;
+  border: none !important;
+  padding: 3px 20px !important;
+  font-size: 25px !important;
+  font-weight: 500;
+  color: #ffffff !important;
+  background-color: #5d9fb9 !important;
+
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.btnCustomMain:hover {
+  background-color: #4b859b !important;
+  color: #e6dfd6 !important;
+}
+
+/*Breakpoints*/
+@media (max-width: 1670px) {
+  .customGrid {
+    grid-template-columns: 300px 300px 300px;
+    grid-row-gap: 30px;
+  }
+
+  .customTitle {
+    font-size: 80px !important;
+  }
+
+  .customText {
+    font-size: 20px !important;
+  }
+
+  .btnCustomTypes {
+    font-size: 18px;
+  }
+
+  .customSubtag {
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 1515px) {
+  .customTitle {
+    font-size: 70px !important;
+  }
+
+  .customText {
+    font-size: 19px !important;
+  }
+
+  .btnCustomMain {
+    font-size: 23px !important;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1473px) {
+  .customGrid {
+    grid-template-columns: repeat(3, 300);
+    grid-row-gap: 5vw;
+  }
+}
+
+@media (max-width: 1450px) {
+  .customGrid {
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    grid-gap: 40px;
+    padding: 30px;
+    margin-top: 20px;
+  }
+
+  .customHead {
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .customisedIntBase {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .customTitle {
+    font-size: 80px !important;
+  }
+
+  .customSubtag {
+    width: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+  }
+
+  .customText {
+    font-size: 22px !important;
+    text-align: right;
+    width: 50%;
+    position: absolute;
+    top: 155px;
+    right: 30px;
+  }
+
+  .btnCustomTypes {
+    font-size: 20px;
+  }
+
+  .btnCustomMain {
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 1090px) {
+  .customText {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .customGrid {
+    grid-template-columns: 300px 300px;
+    width: auto;
+    grid-gap: 20px;
+    padding: 30px;
+    margin-top: 0;
+  }
+
+  .customHead {
+    width: auto;
+    padding-top: 15px;
+  }
+
+  .customisedIntBase {
+    flex-wrap: nowrap;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .customTitle {
+    font-size: 60px !important;
+  }
+
+  .customSubtag {
+    position: relative;
+    text-align: left;
+    top: 0;
+    right: 0;
+    margin: 0;
+    margin-top: 10px;
+    width: auto;
+  }
+
+  .customText {
+    font-size: 22px !important;
+    text-align: left;
+    position: relative;
+    width: auto;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin-top: 25px;
+  }
+
+  .btnCustomTypes {
+    font-size: 20px;
+  }
+
+  .btnCustomMain {
+    font-size: 25px !important;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 930px) {
+  .customText {
+    font-size: 20px !important;
+  }
+
+  .customisedIntBase {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .customGrid {
+    grid-template-columns: auto auto;
+    width: 100%;
+    grid-gap: 40px;
+    padding: 30px;
+    margin-top: 0px;
+  }
+
+  .customHead {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .customisedIntBase {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .customTitle {
+    font-size: 7.5vw !important;
+  }
+
+  .customSubtag {
+    width: 45%;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    text-align: right;
+  }
+
+  .customText {
+    font-size: 20px !important;
+    text-align: right;
+    width: 50%;
+    position: absolute;
+    top: 175px;
+    right: 30px;
+  }
+
+  .btnCustomTypes {
+    font-size: 20px;
+  }
+
+  .btnCustomMain {
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 845px) {
+  .customGrid {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 816px) {
+  .customText {
+    top: 175px;
+  }
+
+  .customGrid {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 780px) {
+  .customText {
+    position: relative;
+    top: 0;
+    right: 0;
+    text-align: left;
+  }
+
+  .customSubtag {
+    width: 30%;
+  }
+
+  .btnCustomTypes {
+    margin-bottom: 15px;
+  }
+
+  .customTitle {
+    font-size: 60px !important;
+  }
+
+  .customHead {
+    padding-bottom: 0;
+  }
+
+  .customGrid {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 620px) {
+  .customGrid {
+    grid-template-columns: auto;
+    width: 100%;
+    grid-gap: 40px;
+    padding: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .customTitle {
+    text-align: center;
+    font-size: 35px !important;
+    padding-top: 2px;
+  }
+
+  .customText {
+    text-align: center;
+    width: 100%;
+    left: 0;
+    font-size: 16px !important;
+    position: static;
+    margin-top: 10px;
+  }
+
+  .customSubtag {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 10px;
+  }
+
+  .customHead {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .btnCustomTypes {
+    font-size: 15px !important;
+    margin-bottom: 5px;
+  }
+
+  .customGrid {
+    margin-top: 0;
+    grid-gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+
+  .btnCustomMain {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 20px !important;
+  }
+
+  .customImgOver {
+    font-size: 16px !important;
+  }
+}

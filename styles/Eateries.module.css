@@ -1,0 +1,160 @@
+.eateriesBase {
+  padding: 45px 35px;
+  background-color: rgb(245, 245, 245);
+  height: fit-content;
+}
+
+.eateriesTitle {
+  font-size: 60px;
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+  text-align: center;
+  color: rgb(201, 180, 112);
+}
+
+.eateriesContent {
+  font-size: 20px;
+  color: rgb(44, 44, 44);
+  padding: 20px 10px;
+  height: 50%;
+}
+
+.eateriesSubtext {
+  font-size: 30px;
+  padding-top: 20px;
+  font-weight: 500;
+  color: rgb(112, 95, 39);
+  display: flex;
+  justify-content: space-around;
+}
+
+.eateriesSubtext > div {
+  padding: 0 10px;
+}
+
+.eatGridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 40px;
+}
+
+.eatGridContainer > div {
+  position: relative;
+}
+
+.eatGridContainer > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eatTitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Breakpoints */
+@media (max-width: 1500px) {
+  #e1 {
+    order: 1;
+    background-size: cover;
+  }
+
+  #e1 > img {
+    display: none;
+  }
+
+  #e2 {
+    order: 2;
+  }
+
+  #e3 {
+    order: 3;
+  }
+
+  #e4 {
+    order: 4;
+  }
+
+  #e5 {
+    order: 5;
+  }
+
+  #e6 {
+    order: 6;
+  }
+
+  .eatGridContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .eatTitleContainer {
+    display: block;
+  }
+
+  .eateriesContent {
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  #e1 {
+    order: 2;
+  }
+
+  #e1 > img {
+    display: block;
+  }
+
+  #e2 {
+    order: 1;
+  }
+
+  .eatGridContainer {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 10px;
+  }
+
+  .eateriesBase {
+    padding: 20px 20px;
+  }
+
+  .eateriesSubtext {
+    padding-top: 10px;
+    justify-content: space-evenly;
+  }
+
+  .eateriesContent {
+    padding-top: 15px;
+  }
+
+  .eateriesBase {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .eateriesBase {
+    padding: 20px 20px;
+  }
+
+  .eateriesTitle {
+    font-size: 9vw;
+  }
+
+  .eateriesSubtext {
+    font-size: 5vw;
+    padding-top: 5px;
+  }
+
+  .eateriesContent {
+    font-size: 16.5px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+  }
+}

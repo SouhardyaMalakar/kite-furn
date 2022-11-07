@@ -1,0 +1,36 @@
+.dev-text {
+  font-weight: 400 !important;
+  font-family: 'Open Sans', sans-serif !important;
+  text-decoration: none !important;
+  transition: all 0.4s;
+  color: #606066 !important;
+}
+
+.dev-text > span {
+  transition: all 0.4s;
+}
+
+.dev-text:hover span {
+  color: #4c4c4d !important;
+  font-size: 22px;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition: color 0.6s, font-size 0.4s, padding 0.8s ease-out;
+}
+
+/* Breakpoints */
+@media (max-width: 435px) {
+  .dev-text {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 400px) {
+  .dev-text {
+    font-size: 4.7vw;
+  }
+
+  .dev-text:hover span {
+    font-size: 5vw;
+  }
+}
