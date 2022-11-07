@@ -1,0 +1,80 @@
+.nvbg {
+  width: 100%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.511);
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to left, #247dbe, #71bcf1);
+  min-height: 75px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.nvRt {
+  display: flex;
+margin: 10px;
+
+  flex-direction: row;
+}
+.nvLf {
+  display: flex;
+margin: 10px;
+  flex-direction: row;
+}
+.navbutt {
+  min-height: 20px;
+  background: linear-gradient(135deg, #a9d3f1, #82beec);
+  outline: none;
+  border: none;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.187);
+  padding: 5px;
+  color: white;
+}
+.kite {
+  border-radius: 0.25rem;
+  color: #212529;
+  background: rgb(127, 69, 21);
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.187);
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.dropdown {
+    height: 45px;
+    background: linear-gradient(135deg, #a9d3f1, #82beec);
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.187);
+    padding: 10px;
+    color: white;
+}
+
+.dropdowncontent {
+    height: 45px;
+    background: linear-gradient(135deg, #a9d3f1, #82beec);
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.187);
+    padding: 10px;
+    color: white;
+    display: none;
+}
+
+.dropdown:hover dropdowncontent {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 400px;
+}
+@media (max-width: 1700px) {
+    .nvbg{
+        flex-direction: column;
+    }
+}
+

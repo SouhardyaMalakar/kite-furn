@@ -9,6 +9,7 @@ import '../styles/Halls.css';
 import '../styles/Office.css';
 import '../styles/Retails.css';
 import type { AppProps } from 'next/app';
+import Navbar from '../components/navbar/Navbar';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -25,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           site_name: 'Kite Furn Home'
         }}
       />
+      <Navbar/>
       <Component {...pageProps} />
     </>
   );

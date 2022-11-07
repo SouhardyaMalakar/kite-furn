@@ -1,23 +1,19 @@
 .heroBase {
   background-image: linear-gradient(to left, #247dbe, #71bcf1);
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 2px soild red;
-  /* padding-top: 50px; */
 }
-
-
 .mt45 {
   margin-top: 35px;
 }
 
 @keyframes door-anim {
   0% {
-    height: 780px;
-    left: 9%;
-    top: 210px;
+    height: 740px;
+    left: 15%;
+    top: 230px;
   }
   50% {
     height: 650px;
@@ -26,15 +22,15 @@
 
   }
   100% {
-    height: 780px;
-    left: 9%;
-    top: 210px;
+    height: 740px;
+    left: 15%;
+    top: 230px;
   }
 }
 
 @keyframes door2-anim {
   0% {
-    height: 670px;
+    height: 665px;
     left: 25%;
     top: 270px;
   }
@@ -45,7 +41,7 @@
 
   }
   100% {
-    height: 670px;
+    height: 665px;
     left: 25%;
     top: 270px;
   }
@@ -60,6 +56,8 @@
   background-clip: border-box;
   background-size: contain;
   background-repeat: no-repeat;
+  /* border:2px solid red; */
+  margin-top: 7vh;
 
 }
 
@@ -73,7 +71,7 @@
   width: auto;
 }
 .heroSpaceImageDoor2 {
-  animation: door2-anim 7s infinite;
+  animation: door2-anim 6s infinite;
   animation-timing-function: ease-in-out;
   opacity: 1;
   position: absolute;
@@ -83,10 +81,11 @@
 
 .heroImageBgRight {
   z-index: 20;
-  text-align: right;
-  padding: 0 2rem;
+  text-align: center;
+  padding: 0 1rem;
+  margin-right: -100px;
+  margin-left: 150px;
 }
-
 .heroText {
   font-size: 150px;
   font-weight: 700;
@@ -114,7 +113,6 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  
   
 }
 
@@ -178,6 +176,7 @@
     background-clip: border-box;
     background-size: contain;
     background-repeat: no-repeat;
+
   }
   .heroSpaceImageDoor {
     /*Animation*/
@@ -472,3 +471,28 @@
     height: 320px;
   }
 }
+.expbutt{
+  width: 250px;
+  border-radius: 30px ;
+  font-size: 26px;
+  font-weight: 600;
+  color: #1faaa0;
+  height: 60px;
+  margin-top: 50px;
+  transition: 2s;
+  border: none;
+  outline: none;
+
+}
+.expbuttimg { 
+  transition: 2s;
+}
+.expbutt:hover { 
+  width: 200px;
+  transition: 2s;
+}
+.expbutt:hover > .expbuttimg { 
+  width: 0px;
+  transition: 2s;
+}
+
