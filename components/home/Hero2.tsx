@@ -44,7 +44,7 @@ function Hero2() {
       <div className={styles.hero2A}>
         <div className={styles.flex}>
           <Image
-            width={300}
+            width={200}
             src= {stairs}
             className={styles.imgStairs}
             alt={content.imgA.alt[0]}

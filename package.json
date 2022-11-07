@@ -10,14 +10,22 @@
     "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,json,md}\""
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.11",
+    "@chakra-ui/react": "^2.3.7",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@nextui-org/react": "^1.0.0-beta.10",
     "bootstrap": "^5.2.1",
+    "framer-motion": "^7.6.5",
     "next": "12.3.0",
     "react": "18.2.0",
+    "react-burger-menu": "^3.0.8",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@types/node": "18.7.16",
     "@types/react": "18.0.19",
+    "@types/react-burger-menu": "^2.8.3",
     "@types/react-dom": "18.0.6",
     "autoprefixer": "^10.4.8",
     "eslint": "8.23.0",

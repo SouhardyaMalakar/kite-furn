@@ -55,7 +55,8 @@
 }
 
 .glassStairsImgOverlay {
-  position: absolute;
+  position: relative;
+  z-index: 100;
   background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.596) 0%,
@@ -67,11 +68,18 @@
   color: #ffffff;
   width: 100%;
   padding: 10px 30px;
-  padding-top: 60px;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
+  margin-top: -90px;
+  margin-left: 2%;
 }
 
+@media (max-width: 600px) {
+  .glassStairsImgOverlay {
+  margin-left: 3%;
+  margin-top: -35%;
+  }
+}
 .glassStairsTitleContainer > span {
   font-size: 90px;
   font-weight: 800;

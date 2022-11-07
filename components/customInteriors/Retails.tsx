@@ -29,8 +29,8 @@ const content = {
 function Retails() {
   return (
     <div className="fluid-container retails-base" id="retails" >
-      <div className="retailsA" >
-        <div style={{width : '600px'}}  >
+      <div className="retailsA" style={{marginLeft:"5%"}} >
+        <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}  >
           <Image
           className={custom.customImg}
           width="550"
@@ -38,11 +38,11 @@ function Retails() {
             src="/images/customInteriors/retails/A.jpg"
             alt={content.imgA.alt}
           />
-          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgA.front}
           </div>
         </div>
-        <div style={{width : '600px'}} >
+        <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }} >
           <Image
           className={custom.customImg}
           width="550"
@@ -50,11 +50,11 @@ function Retails() {
             src="/images/customInteriors/retails/B.jpg"
             alt={content.imgB.alt}
           />
-          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgB.front}
           </div>
         </div>
-        <div style={{width : '600px', marginBottom:"20px"}} >
+        <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }} >
           <Image
           className={custom.customImg}
           width="550"
@@ -62,11 +62,11 @@ function Retails() {
             src="/images/customInteriors/retails/C.jpg"
             alt={content.imgC.alt}
           />
-          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgC.front}
           </div>
         </div>
-        <div style={{width : '600px'}} >
+        <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }} >
           <Image
           className={custom.customImg}
             width="550"
@@ -74,7 +74,7 @@ function Retails() {
             src="/images/customInteriors/retails/D.jpg"
             alt={content.imgD.alt}
           />
-          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgD.front}
           </div>
         </div>

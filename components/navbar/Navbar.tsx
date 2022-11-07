@@ -1,18 +1,42 @@
-import { Router } from 'next/router';
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 import styles from '../../styles/navbar.module.css';
+import {
+  useColorMode,
+  Switch,
+  Flex,
+  Button,
+  IconButton
+} from '@chakra-ui/react';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 function Navbar() {
+  const [win, setWin] = useState(1000);
+  const { colorMode, toggleColorMode } = useColorMode();
+    const isDark = colorMode === 'dark';
+    const [display, changeDisplay] = useState('none');
+
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      return setWin(window.innerWidth);
+    });
+  }, []);
+
   const router = useRouter();
-  return (
-    <div className={styles.nvbg}>
-      <div className={styles.nvRt}>
-        <button className={styles.navbutt} onClick={() => {
-            router.push('http://kitefurn.com/');
-          }}>
-          <img
-            height={30}
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAABmJLR0QA/wD/AP+gvaeTAAAKZUlEQVR4nO3dW5AcVR0G8O/fs9klZGdmd3o3QCiUQEAULCjxgngpLIpSdiEogheQskpBocSilAd9gzd5Qy5CKUQUlYrcAkLWSggIBSQUD5aoqBgQiotudm59ehKQZLr/PuyiFEJmZqenT/ec7/c82/2l01/NnLM7/QeIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiChvxHYA1zQarePiQnwhYpwGwbsBAIIXAGyTtneT7xefthrQMSxASlR1tG7CqwFcDMB7h5dFUNzoT5QuF5G9KcZzFguQAmNMpa26SSGf7O4n9JEVImeXy+XGYJMRCzBgQRCsbUPmABzT448+GwtmVpfLOweRixa901sxJaBmzIfakB3o/eYHgHWeYkc9DE9OOhf9DwswILVmeBYUDwM4qI/D+Brr1mozXJ9QLHoLFmAAqkFwEUTvBHBgAodbJaJ314y5NIFj0VuwAAlSVak2zZUC+QmA
+
+  if (win > 1000) {
+    return (
+      <div className={styles.nvbg}>
+        <div className={styles.nvRt}>
+          <button
+            className={styles.navbutt}
+            onClick={() => {
+              router.push('http://kitefurn.com/');
+            }}
+          >
+            <img
+              height={30}
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAABmJLR0QA/wD/AP+gvaeTAAAKZUlEQVR4nO3dW5AcVR0G8O/fs9klZGdmd3o3QCiUQEAULCjxgngpLIpSdiEogheQskpBocSilAd9gzd5Qy5CKUQUlYrcAkLWSggIBSQUD5aoqBgQiotudm59ehKQZLr/PuyiFEJmZqenT/ec7/c82/2l01/NnLM7/QeIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiChvxHYA1zQarePiQnwhYpwGwbsBAIIXAGyTtneT7xefthrQMSxASlR1tG7CqwFcDMB7h5dFUNzoT5QuF5G9KcZzFguQAmNMpa26SSGf7O4n9JEVImeXy+XGYJMRCzBgQRCsbUPmABzT448+GwtmVpfLOweRixa901sxJaBmzIfakB3o/eYHgHWeYkc9DE9OOhf9DwswILVmeBYUDwM4qI/D+Brr1mozXJ9QLHoLFmAAqkFwEUTvBHBgAodbJaJ314y5NIFj0VuwAAlSVak2zZUC+QmA
         kQQPXYDiulrTXKOq/D9LEBfBCdmpOlYx4c8U+NJgz6SbXmuVzz/sMHltsOdxAwuQAGNMpQ3co4pPpHTKJ/YVvPWHFIvVlM4
         3tFiAPu0KgiMKi9uc70n51M+pJ7PTpdIzKZ93qPDzZB9qxnyksLjNmfbNDwBHSqzbG43w4xbOPTRYgGWqNcPPQfV3AFZbjFGJPd1WNWbA647hxQIsQ71pLlvc5pSVtrMAGBPFbdWmudJ2kDziGqAHqlqoB+HVEHzbdpa3pbjWnyh9V0Qi21HyggXo0vOqB4yb8OcCfMF2lv0S3Lt3z57z1qxZ86rtKHnAAnQhDEP/9UjvFcHHbGfp0pPRSGH9QePju2wHyToWoIMFY9Z5ijkAR9nO0gsFnhdPZqZKpb/ZzpJlXATvRz0MP+optiNnNz8ACLAWsW5faLa6/A6Cm1iAd1APgs9rHD8IYNp2lj5MehJvrRpznu0gWcUCvI1601ymkNszss3ZrzFR/JLbpG+Pa4A3WdrmvAaCb9nOMggK3TBVLl8sIm3bWbKCBVgyPz+/amRs5UYIzrCdZcC2StQ+1/f90HaQLGABACzs3n2w147uB3Ci7SxpUMgfvWjfrO/7L9vOYpvzBai3Wu/TKJ4Dlp7R4wx9JVKdPWhy8inbSWxyehFcbTY/pVH8OJy7+QFADi2
         I93C12TzFdhKbnC1APQjOFfHmAEzYzmLRhIi3pWbMV2wHscXJAixtc/4awAG2s2TAKBS3urpN6tQaQFULdRNej8XHE9L/0Vv8cvmbIrLPdpK0OFOAhYWF8cKKsY0qmLWdJeO2eXF0TqVSMbaDpMGJAlT37DlE9rXvB/AB21nyQf8kUTTr+/5LtpMM2tAXoNFoHRd78WYA77KdJVcE/4zjeHb15OQfbEcZpKFeBNeC4NTYix8Db/7eKdZ44j3aMOZ021EGaWgLUGuGXwXktwDKtrPk2His+E01CL5hO8igDF0B3ng8IURvAbDCdp4hMCKQH9eC8CpVHbqPzEP1D1LVkYZp3aDQi2xnGUqCW/1S6aJhml4zNAWoVqtFrBi9XYDP2M4y3OQhL26fPSzbpENRgGp1zxpvRXuzAifYzuIEwdNeFM1UKpUXbUfpV+4L0Gjsfn/sRZsBHGY7i1MU/1LRM6YnJn5vO0o/cr0IrgfBabEXPQbe/OkTHCKQR6rG5Po367ktQL0Zfk0hmwGUbGdx2Lgo7q0FwSW2gyxX7grwxjanim4AtzmzoADIDXmdXpOrNYC
@@ -21,44 +45,38 @@ function Navbar() {
         B+fn7VyMqVt0GxPsnjEi3Zovv2njs9Pd1K6oCJFWBp2PR9ADL/NTjKL4U8Je2R2ampA19J4niJFGDBmHWeYg7AUUkcj6iDF1DwZqaKxb/2e6C+F8H1MDxZFDvAm5/Sczii+PEkhnz3VYB6EJyjsT4owFS/QYh6NCnibakac34/B1l2AThsmjJgVBS/6GebtOc1wNKw6esA5PaBqDSM9Kd+uXxxr0O+eyrA/Pz8qpGxlRshOKO3cESpeECi9jm+74fd/kDXBVgaNn0fgBOXFY0oFb0N+e6qAPV661gtxHPgvF3Khxcl8mZ8v/h0pxd2LEA1DI+WWHcAqCQSjSgdjVhw0upyeef+XtRxF0ji+Crw5qf8qXgqP+j0oi62QeXUJNIQpU873rvd/B4gEw/PIlqGjvduFwXQB5NIQpQ2BbZ0ek3HAqjnfR9AM5FEROmpe1H78k4v6liA6VLpGYnaxwNyB4Cuf8FAZEmowO0StU/wff/lTi+2/vm+Fhi1nYHsmZooW70HrT8cl8gmFoCcxgKQ01gAchoLQE5jAchpLAA5jQUgp7EA5DQWgJzGApDTWAByGg
         tATmMByGksADltxHaAvLP99+z8PkV/+A5ATmMByGksADmNBSCnsQDkNBaAnMYCkNNYAHIaC0BOYwHIaSwAOY0FIKexAOQ0
         FoCcxgKQ01gAchoLQE5jAchpLAA5jQUgp7EA5DQWgJzGApDTWAByGgtATmMByGksADmNBSCnsQDkNBaAnMYCkNNYAHIaC0BOYwHIaSwAOY0FIKexAOQ0FoCcxgKQ01gAchoLQE5jAchpLAA5jQUgp7EA5DQWgJzGApDTslCAlu0AfQhtBwCvX1/sF0Dxku0Iy6cv2k7A69cf+wXw8IDtCMulIlttZ+D164/1AniRdzOAyHaOZYg8z9tgOwSvX3+sF6BSKf4Zihtt5+iZ4kd+sfgX2zF4/fojtgMAgKqO1k04B+BU21m6tM0vl2ZEZJ/tIACvXz+svwMAgIjs9culGSiuQ7bfziMors3Kf94beP2WLxPvAG9Wr7eOjUfir4vqaYAcDmDcbiLsBvQFFdnqed6GLLxt7w+vHxERERERERERERERERERERERERERERERERERERERERERERER5dV/ABh0gjSxx0+oAAAAAElFTkSuQmCC"
-          />
-        </button>
-        <button
-          className={styles.navbutt}
-          onClick={() => {
-            router.push('/customInteriors/#residence');
-          }}
-        >
-          Residence Interiors
-        </button>
-        <button
-          className={styles.navbutt}
-          onClick={() => {
-            router.push('http://www.kitekitchens.com/');
-          }}
-        >
-          Moduler Kitchen
-        </button>
-        <button
-          className={styles.navbutt}
-          onClick={() => {
-            router.push('/customInteriors/#residence');
-          }}
-        >
-          Customised Interiors
-        </button>
-        <div className={styles.dropdown}>
-          <span>Mouse over me</span>
-          <div className={styles.dropdowncontent}>
-            <p>Hello World!</p>
-          </div>
+            />
+          </button>
+          <button
+            className={styles.navbutt}
+            onClick={() => {
+              router.push('/customInteriors/#residence');
+            }}
+          >
+            Residence Interiors
+          </button>
+          <button
+            className={styles.navbutt}
+            onClick={() => {
+              router.push('http://www.kitekitchens.com/');
+            }}
+          >
+            Moduler Kitchen
+          </button>
+          <button
+            className={styles.navbutt}
+            onClick={() => {
+              router.push('/customInteriors/#residence');
+            }}
+          >
+            Customised Interiors
+          </button>
         </div>
-      </div>
-      <div className={styles.nvLf}>
-        <button className={styles.navbutt}>
-          <img
-            height={30}
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gv
+        <div className={styles.nvLf}>
+          <button className={styles.navbutt}>
+            <img
+              height={30}
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gv
         aeTAAAFDElEQVRogdWaX2wUZRTFf3emLZaA0G0riIIQozGKJibEYkI0CvKndKlGgw8Yg4pKAoKosFsgphq0WyU8aQzGPhgTHlYeKGuBpAQMR
         KqkvkiK0Rj+RahCdwENpaXduT7UimJn987uYOJ529xz7z0n351v5ptZ+J9DwiqU3rFpspS4C1BmgdyjMAUYD6jCBVFOItqFOgc9ZXd1fexMGH2LNp
         Bua5ovnsQUHgIcY5oH7FfRRFVdw95i+hdsIN3WNB9P3gIeKEYASIeK92ahRgIbyLQnxnl9+qEgSwpp6A/91POcV6rrY78HyQpk4GzqvTtcvJ3AXYG02dUcz
@@ -75,14 +93,55 @@ function Navbar() {
         rJ9Fog3PFtu7qBUYRu/lspUoneYEpfPimP6Xwugd2ofuc3veudkZcDpAbstDPY0rMy2fjywIZQUAqudv6Ca
         rtcCFHLTfxHNrwxIPIRoAqHx8/VEPfYKRd6YBPHkqUr/2uzB7hmoAoDra8KXAcwz9nWAYnsDSyvqY7WVuAIRuA
         CASjW8TYeWfP1XQFZFofNv16HVdkUkl4plU4rqe5v4Al8OWuYLbTh4AAAAASUVORK5CYII="
-          />
-        </button>
-        <button className={styles.navbutt}>Contact Rajesh @999999999</button>
-        <button className={styles.navbutt}>Contact Rajesh @999999999</button>
-        <button className={styles.kite}>Q kite</button>
+            />
+          </button>
+          <button className={styles.navbutt}>Contact Rajesh @999999999</button>
+          <button className={styles.navbutt}>Contact Rajesh @999999999</button>
+          <button className={styles.kite}>Q kite</button>
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    
+    return (
+  <div className={styles.menuToggle} style={{  height:"70px", width:"100%"}}>
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul className={styles.menu}>
+    <button
+            className={styles.navbutt2}
+            onClick={() => {
+              router.push('/customInteriors/#residence');
+            }}
+          ><li>Residence Interiors</li></button>
+      <button
+            className={styles.navbutt2}
+            onClick={() => {
+              router.push('http://www.kitekitchens.com/');
+            }}
+          >
+            <li>Moduler Kitchen</li>
+          </button>
+          <button
+            className={styles.navbutt2}
+            onClick={() => {
+              router.push('/customInteriors/#residence');
+            }}
+          >
+            <li>Customised Interiors</li>
+          </button>
+          <button
+            className={styles.navbutt2}
+            
+          >
+            <li>Contact</li>
+          </button>
+    </ul>
+  </div>
+    );
+  }
 }
 
 export default Navbar;

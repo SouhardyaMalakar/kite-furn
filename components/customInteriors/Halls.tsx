@@ -37,7 +37,7 @@ const content = {
 function Hotels() {
   return (
     <div className="fluid-container halls-base" id="halls">
-      <div className="halls-grid-container" style={{display : 'flex', flexDirection: 'column'}}>
+      <div className="halls-grid-container" style={{display : 'flex', flexDirection: 'column', marginLeft:'30px'}}>
         <div id="ha" className="halls-title-container">
           <div className="halls-title">Mandaps, Halls and Banquets</div>
           <div className="halls-subtext">
@@ -46,7 +46,7 @@ function Hotels() {
           <div className="halls-content">{content.subtext}</div>
         </div>
         <div style ={{display: 'flex', flexDirection : "row" ,  flexWrap:"wrap", width:"101%"}} >
-        <div id="hb" style={{width : '600px' , margin:"10px"}}>
+        <div id="hb" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
           <Image
             className={custom.customImg}
             width="550"
@@ -54,11 +54,11 @@ function Hotels() {
             alt={content.imgA.alt}
             src="/images/customInteriors/halls/A.jpg"
           />
-          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgA.front}
           </div>
         </div>
-        <div id="hc" style={{width : '600px', margin:"10px"}}>
+        <div id="hc" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
           <Image
             className={custom.customImg}
             width="550"
@@ -66,11 +66,11 @@ function Hotels() {
             alt={content.imgB.alt}
             src="/images/customInteriors/halls/B.jpg"
           />
-          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgB.front}
           </div>
         </div>
-        <div id="hd" style={{width : '600px', margin:"10px"}}>
+        <div id="hd" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
           <Image
             className={custom.customImg}
 
@@ -79,11 +79,11 @@ function Hotels() {
             alt={content.imgC.alt}
             src="/images/customInteriors/halls/C.jpg"
           />
-          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgC.front}
           </div>
         </div>
-        <div id="he" style={{width : '600px', margin:"10px"}}>
+        <div id="he" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
           <Image
             className={custom.customImg}
 
@@ -92,11 +92,11 @@ function Hotels() {
             alt={content.imgD.alt}
             src="/images/customInteriors/halls/D.jpg"
           />
-          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgD.front}
           </div>
         </div>
-        <div id="hf" style={{width : '600px', margin:"10px"}}>
+        <div id="hf" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
           <Image
             className={custom.customImg}
 
@@ -105,7 +105,7 @@ function Hotels() {
             alt={content.imgE.alt}
             src="/images/customInteriors/halls/E.jpg"
           />
-          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgE.front}
           </div>
         </div>

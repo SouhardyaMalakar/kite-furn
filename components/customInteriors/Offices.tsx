@@ -26,13 +26,13 @@ const content = {
 function Offices() {
   return (
     <div className="fluid-container offices-base" id="offices">
-      <div className="offices-grid-container"  style ={{display: 'flex', flexDirection:"column"  }}>
-        <div className="title gridItem">
+      <div className="offices-grid-container"  style ={{display: 'flex', flexDirection:"column" , marginLeft:"30px" }}>
+        <div className="title gridItem">,
           <div className="offices-title">OFFICE SPACES</div>
           <div className="offices-content">{content.subtext}</div>
         </div>
         <div className="longImg gridItem" style ={{display: 'flex',  flexWrap:"wrap" }}>
-          <div style={{width : '600px'}}>
+          <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
           <Image
           className={custom.customImg}
             width="500px"
@@ -40,11 +40,11 @@ function Offices() {
             src="/images/customInteriors/offices/A.jpg"
             alt={content.imgA.alt}
           />
-          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'50px'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgA.front}
           </div>
           </div>
-        <div className="imgA gridItem" style={{width : '600px'}}>
+        <div className="imgA gridItem" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
           <Image
           className={custom.customImg}
             width="500"
@@ -52,11 +52,11 @@ function Offices() {
             src="/images/customInteriors/offices/B.jpg"
             alt={content.imgB.alt}
           />
-          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}} >
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}} >
             {content.imgB.front}
           </div>
         </div>
-        <div className="imgB gridItem" style={{width : '600px'}}>
+        <div className="imgB gridItem" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
           <Image
           className={custom.customImg}
             width="500"
@@ -64,7 +64,7 @@ function Offices() {
             src="/images/customInteriors/offices/C.jpg"
             alt={content.imgC.alt}
           />
-          <div style ={{position:'relative',color : "white", width: "500px", marginTop :'-80px' , zIndex :'100', marginLeft:'5%'}} >
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}} >
             {content.imgC.front}
           </div>
         </div>

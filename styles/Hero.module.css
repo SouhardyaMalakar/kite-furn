@@ -1,6 +1,6 @@
 .heroBase {
   background-image: linear-gradient(to left, #247dbe, #71bcf1);
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -83,8 +83,9 @@
   z-index: 20;
   text-align: center;
   padding: 0 1rem;
-  margin-right: -100px;
+  margin-right: -50px;
   margin-left: 150px;
+  margin-top: 100px;
 }
 .heroText {
   font-size: 150px;

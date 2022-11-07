@@ -9,49 +9,29 @@ const GlassStairs = () => {
       className={`fluid-container ${styles.glassStairsBase}`}
       id="glass-stairs"
     >
-      <div className={styles.glassStairsA}>
-        <div>
+      <div style={{ display : 'flex' , flexDirection:"row", flexWrap:'wrap'}}>
+        <div style={{marginBottom:"50px" , marginTop:"50px" ,width:"90%", maxWidth:"450px", margin:"10px"}}>
           <Image
-            width="300"
-            height="200"
+            width="450"
+            height="700"
             src="/images/customInteriors/glassStairs/A.jpg"
             alt="Steel and wooden stairs with glass handrails can be done."
-            className={styles.glassStairsImg}
-          />
-          <Image
-            width="300"
-            height="200"
-            src="/images/customInteriors/glassStairs/B.jpg"
-            alt="Steel and wooden stairs with glass handrails can be done."
-            className={styles.glassStairsImgTop}
-          />
-          <Image
-            width="300"
-            height="200"
-            className={styles.glassStairsImgTop}
-            src="/images/customInteriors/glassStairs/A.jpg"
-            alt="We do balcony handrails."
+            style={{ borderRadius: "10px"}}
           />
           <div className={styles.glassStairsImgOverlay}>
             Glass and wooden rails along with wood finishes for steps makes this
             existing staircase look new, modern & spacious.
           </div>
         </div>
-        <div>
+        <div style={{marginBottom:"50px" , marginTop:"50px" ,width:"90%", maxWidth:"450px", margin:"10px" }}>
           <div className={styles.imgBContainer}>
             <Image
-              width="300"
-              height="200"
-              className={styles.glassStairsImg}
+              width="450"
+              height="700"
               src="/images/customInteriors/glassStairs/B.png"
               alt="Beautiful handrails for existing staircase."
-            />
-            <Image
-              width="300"
-              height="200"
-              className={styles.glassStairsImgTop}
-              src="/images/customInteriors/glassStairs/B.png"
-              alt="Good shower partition in glass can be supplied."
+            style={{ borderRadius: "10px"}}
+
             />
             <div className={styles.glassStairsImgOverlay}>
               This prefabricated steel steps finished in wood with glass and

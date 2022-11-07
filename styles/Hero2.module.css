@@ -112,7 +112,7 @@
   position: absolute;
   top: 30px;
   left: 20px;
-  z-index: 40;
+  z-index: 100;
 }
 
 .bedTextTop {
@@ -121,6 +121,7 @@
   font-weight: 800;
   line-height: 1.03;
   font-size: 100px !important;
+
 }
 
 .bedTextSubtop {
@@ -132,7 +133,10 @@
   padding-left: 4px;
   padding-top: 15px;
   font-size: 29px !important;
+  position: relative;
+  z-index: 100 ;
 }
+
 
 .btnBed {
   font-weight: 500;
@@ -582,6 +586,9 @@
     padding: 0 15px;
     margin-top: -130px;
     padding-bottom: 10px;
+    position: absolute;
+    padding-right: 50px;
+
   }
 
   .bedTextContainer {
