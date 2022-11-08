@@ -2,27 +2,23 @@ import React, { useEffect, useState} from 'react';
 import styles from '../../styles/navbar.module.css';
 import {
   useColorMode,
-  Switch,
-  Flex,
-  Button,
-  IconButton
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
-import { useRouter } from 'next/router';
+import router, { useRouter } from 'next/router';
 function Navbar() {
-  const [win, setWin] = useState(1000);
+  const [win, setWin] = useState(1200);
   const { colorMode, toggleColorMode } = useColorMode();
     const isDark = colorMode === 'dark';
     const [display, changeDisplay] = useState('none');
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWin(window.innerWidth);
+    }
     window.addEventListener('resize', () => {
       return setWin(window.innerWidth);
     });
   }, []);
-
-  const router = useRouter();
 
   if (win > 1000) {
     return (
@@ -104,7 +100,7 @@ function Navbar() {
   } else {
     
     return (
-  <div className={styles.menuToggle} style={{  height:"70px", width:"100%"}}>
+  <div className={styles.menuToggle} style={{  height:"70px", width:"100%", zIndex:"100"}}>
     <input type="checkbox" />
     <span></span>
     <span></span>
