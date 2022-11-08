@@ -11,39 +11,39 @@
 
 @keyframes door-anim {
   0% {
-    height: 740px;
-    left: 15%;
-    top: 230px;
+    height: 750px;
+    left: 9%;
+    top: 215px;
   }
   50% {
     height: 650px;
     left: 28%;
-    top: 280px;
+    top: 260px;
 
   }
   100% {
-    height: 740px;
-    left: 15%;
-    top: 230px;
+    height: 750px;
+    left: 9%;
+    top: 215px;
   }
 }
 
 @keyframes door2-anim {
   0% {
     height: 665px;
-    left: 25%;
-    top: 270px;
+    left: 24%;
+    top: 255px;
   }
   50% {
-    height: 780px;
-    left: 9%;
+    height: 760px;
+    left: 4%;
     top: 210px;
 
   }
   100% {
     height: 665px;
-    left: 25%;
-    top: 270px;
+    left: 24%;
+    top: 255px;
   }
 }
 
