@@ -3,9 +3,10 @@ import { Dropdown } from '@nextui-org/react'
 import router, { useRouter } from 'next/router';
 
 function DropDown() {
+  let val ='50px';
   return (
     <Dropdown >
-      <Dropdown.Button flat css={{background: 'linear-gradient(135deg, #a9d3f1, #82beec)', color:"white", height : "50px", borderRadius: "5px", boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.187)' }}>Customised Interiors</Dropdown.Button>
+      <Dropdown.Button flat css={{background: 'linear-gradient(135deg, #a9d3f1, #82beec)', height:val, color:"white", borderRadius: "5px", boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.187)' }}>Customised Interiors</Dropdown.Button>
       <Dropdown.Menu aria-label="Static Actions" css={{background: 'linear-gradient(135deg, #a9d3f1, #82beec)'}}>
         <Dropdown.Item key="new" css={{marginBottom:'10px' ,background: 'linear-gradient(135deg, #a9d3f1, #82beec)', boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.187)"}}><button
             onClick={() => {
