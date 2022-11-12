@@ -8,8 +8,8 @@
   background-color: #8a6638;
   height: fit-content;
   padding: 35px;
-  padding-right: 60px;
   width: 100%;
+  margin-right: 0px;
 }
 
 .imgRoomNumber {
@@ -115,31 +115,8 @@
 
 /* Breakpoints */
 
-@media (max-width: 1800px) {
-  .hotelsGridContainer {
-    grid-template-rows: 250px 300px;
-  }
-
-  .hotelsBase {
-    padding-right: 8%;
-  }
-}
 
 @media (max-width: 1450px) {
-  .hotelsGridContainer {
-    grid-template-areas: 'header header' 'imgA imgB' 'imgC imgD';
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 20px;
-    height: 100%;
-    margin-right: 0;
-  }
-
-  .hotelsContainer {
-    height: 100%;
-    width: 100%;
-    padding-right: 30px;
-  }
-
   .hotelsBase {
     padding-right: 0;
   }
@@ -158,14 +135,6 @@
 }
 
 @media (max-width: 992px) {
-  .hotelsGridContainer {
-    grid-template-areas: 'header' 'imgA' 'imgB' 'imgC' 'imgD';
-    grid-template-rows: repeat(6, auto);
-    grid-gap: 20px;
-    height: 100%;
-    margin-right: 0;
-  }
-
   .hotelsTitle {
     font-size: 10vw;
   }
@@ -184,19 +153,10 @@
     align-items: center;
   }
 
-  .hotelsContainer {
-    padding: 20px 25px;
-    padding-bottom: 0;
-  }
+
 }
 
 @media (max-width: 600px) {
-  .hotelsContent {
-    font-size: 16px;
-    max-width: 100%;
-    padding-bottom: 5px;
-  }
-
   .itemA {
     padding: 0;
   }
@@ -206,13 +166,7 @@
     height: auto;
   }
 
-  .hotelsGridContainer {
-    grid-gap: 10px;
-  }
 
-  .hotelsContainer {
-    padding: 15px 20px;
-  }
 }
 .imgText{
   position: absolute;
