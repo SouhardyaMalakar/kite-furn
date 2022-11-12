@@ -38,21 +38,21 @@ const content = {
 function Eateries() {
   return (
     <div className={`fluid-container ${styles.eateriesBase}`} id="eateries">
-      <div className={styles.eatGridContainer} style={{ marginLeft:"30px"}}>
-        <div id="e1" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+      <div className={styles.eatGridContainer} >
+        <div id="e1" style={{marginBottom:"40px", marginTop:"0px" , width:"100%", maxWidth:"600px" }}>
           <Image
             className={styles.resImg}
 
-            width="500"
+            width="580"
             height="400"
             src="/images/customInteriors/eateries_bakeries/A.JPG"
             alt={content.imgA.alt}
           />
-          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"100%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgA.front}
           </div>
         </div>
-        <div id="e2" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div id="e2" style={{marginBottom:"40px", marginTop:"0px" , width:"100%", maxWidth:"600px", height: "400px" }}>
           <div className={styles.eateriesTitle}>
             Restaurants Bakeries &amp; more
           </div>
@@ -61,11 +61,11 @@ function Eateries() {
           </div>
           <div className={styles.eateriesContent}>{content.subtext}</div>
         </div>
-        <div id="e3" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div id="e3" style={{marginBottom:"40px", marginTop:"0px" , width:"100%", maxWidth:"600px" }}>
           <Image
             className={styles.resImg}
 
-            width="500"
+            width="580"
             height="400"
             src="/images/customInteriors/eateries_bakeries/B.JPG"
             alt={content.imgB.alt}
@@ -74,11 +74,11 @@ function Eateries() {
             {content.imgB.front}
           </div>
         </div>
-        <div id="e4" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div id="e4" style={{marginBottom:"40px", marginTop:"0px" , width:"100%", maxWidth:"600px" }}>
           <Image
             className={styles.resImg}
 
-            width="550"
+            width="580"
             height="400"
             src="/images/customInteriors/eateries_bakeries/C.JPG"
             alt={content.imgC.alt}
@@ -87,11 +87,11 @@ function Eateries() {
             {content.imgC.front}
           </div>
         </div>
-        <div id="e5" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div id="e5" style={{marginBottom:"40px", marginTop:"0px" , width:"100%", maxWidth:"600px" }}>
           <Image
             className={styles.resImg}
 
-            width="550"
+            width="580"
             height="400"
             src="/images/customInteriors/eateries_bakeries/D.JPG"
             alt={content.imgD.alt}
@@ -100,10 +100,10 @@ function Eateries() {
             {content.imgD.front}
           </div>
         </div>
-        <div id="e6" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div id="e6" style={{marginBottom:"40px", marginTop:"0px" , width:"100%", maxWidth:"600px" }}>
           <Image
             className={styles.resImg}
-            width="550"
+            width="580"
             height="400"
             src="/images/customInteriors/eateries_bakeries/E.JPG"
             alt={content.imgE.alt}

@@ -37,7 +37,7 @@ const content = {
 function Hotels() {
   return (
     <div className="fluid-container halls-base" id="halls">
-      <div className="halls-grid-container" style={{display : 'flex', flexDirection: 'column', marginLeft:'30px'}}>
+      <div className="halls-grid-container" style={{display : 'flex', flexDirection: 'column'}}>
         <div id="ha" className="halls-title-container">
           <div className="halls-title">Mandaps, Halls and Banquets</div>
           <div className="halls-subtext">
@@ -46,10 +46,10 @@ function Hotels() {
           <div className="halls-content">{content.subtext}</div>
         </div>
         <div style ={{display: 'flex', flexDirection : "row" ,  flexWrap:"wrap", width:"101%"}} >
-        <div id="hb" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div id="hb" style={{marginBottom:"50px", marginTop:"20px" , width:"100%", maxWidth:"620px" }}>
           <Image
             className={custom.customImg}
-            width="550"
+            width="600"
             height="400"
             alt={content.imgA.alt}
             src="/images/customInteriors/halls/A.jpg"
@@ -58,10 +58,10 @@ function Hotels() {
             {content.imgA.front}
           </div>
         </div>
-        <div id="hc" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div id="hc" style={{marginBottom:"50px", marginTop:"20px" , width:"100%", maxWidth:"620px" }}>
           <Image
             className={custom.customImg}
-            width="550"
+            width="600"
             height="400"
             alt={content.imgB.alt}
             src="/images/customInteriors/halls/B.jpg"
@@ -70,11 +70,11 @@ function Hotels() {
             {content.imgB.front}
           </div>
         </div>
-        <div id="hd" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div id="hd" style={{marginBottom:"50px", marginTop:"20px" , width:"100%", maxWidth:"620px" }}>
           <Image
             className={custom.customImg}
 
-            width="550"
+            width="600"
             height="400"
             alt={content.imgC.alt}
             src="/images/customInteriors/halls/C.jpg"
@@ -83,11 +83,11 @@ function Hotels() {
             {content.imgC.front}
           </div>
         </div>
-        <div id="he" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div id="he" style={{marginBottom:"50px", marginTop:"20px" , width:"100%", maxWidth:"620px" }}>
           <Image
             className={custom.customImg}
 
-            width="550"
+            width="600"
             height="400"
             alt={content.imgD.alt}
             src="/images/customInteriors/halls/D.jpg"
@@ -96,11 +96,11 @@ function Hotels() {
             {content.imgD.front}
           </div>
         </div>
-        <div id="hf" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div id="hf" style={{marginBottom:"50px", marginTop:"20px" , width:"100%", maxWidth:"620px" }}>
           <Image
             className={custom.customImg}
 
-            width="550"
+            width="600"
             height="400"
             alt={content.imgE.alt}
             src="/images/customInteriors/halls/E.jpg"

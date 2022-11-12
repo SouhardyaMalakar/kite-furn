@@ -31,12 +31,12 @@ const content = {
 function Residence() {
   return (
     <div className="fluid-container residences-base" id="residence"  >
-      <div className="residencesA" style ={{display: 'flex',  flexWrap:"wrap"  , marginBottom:"100px", marginLeft:'30px'}}>
-        <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+      <div className="residencesA" style ={{display: 'flex',  flexWrap:"wrap"  , marginBottom:"40px"}}>
+        <div style={{marginBottom:"40px",  marginTop:"0px" , width:"100%", maxWidth:"620px" }}>
           <Image
            className={styles.customImg}
-            width="550"
-            height="300"
+            width="590"
+           height="320"
             src="/images/customInteriors/residence_interiors/A.jpg"
             alt={content.imgA.alt}
           />
@@ -44,11 +44,11 @@ function Residence() {
             {content.imgA.front}
           </div>
         </div>
-        <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div style={{marginBottom:"40px",  marginTop:"0px" , width:"100%", maxWidth:"620px" }}>
           <Image
            className={styles.customImg}
-           width="550"
-           height="300"
+           width="590"
+           height="320"
             src="/images/customInteriors/residence_interiors/B.jpg"
             alt={content.imgB.alt}
           />
@@ -56,11 +56,11 @@ function Residence() {
             {content.imgB.front}
           </div>
         </div>
-        <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div style={{marginBottom:"40px",  marginTop:"0px" , width:"100%", maxWidth:"620px" }}>
           <Image
            className={styles.customImg}
-           width="550"
-           height="300"
+           width="590"
+           height="320"
             src="/images/customInteriors/residence_interiors/C.jpg"
             alt={content.imgC.alt}
           />
@@ -68,11 +68,11 @@ function Residence() {
             {content.imgC.front}
           </div>
         </div>
-        <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div style={{marginBottom:"40px",  marginTop:"0px" , width:"100%", maxWidth:"620px" }}>
           <Image
            className={styles.customImg}
-           width="550"
-           height="300"
+           width="590"
+           height="320"
             src="/images/customInteriors/residence_interiors/D.jpg"
             alt={content.imgD.alt}
           />

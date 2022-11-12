@@ -4,6 +4,7 @@
   position: relative;
   padding-bottom: 35px;
   background-color: #928181;
+  
 }
 
 .meetLeft {
@@ -47,9 +48,6 @@
   border-right: 2px solid #a89797b9;
 }
 
-#img-L-A {
-  object-position: 20% 0;
-}
 
 .mt4ish {
   margin-top: 20px;
@@ -62,14 +60,9 @@
 
 .meetRightImages {
   width: 100%;
-  padding: 0 40px;
-
-  height: 650px;
-
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(2, minmax(1px, 1fr));
-  grid-gap: 50px 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .meetRightImages > div {
@@ -78,21 +71,16 @@
 }
 
 .imgContainer {
-  height: 100%;
   width: 50%;
   float: left;
-}
-
-.imgContainer > img {
-  object-fit: cover;
-  width: 100%;
+  border-radius: 10px;
   height: 100%;
+
+}
+.img{
   border-radius: 5px 0px 0px 5px;
 }
 
-#sajeesh {
-  object-position: 20% 0;
-}
 
 .meetImgCard {
   position: absolute;
@@ -111,19 +99,11 @@
   padding-top: 10px;
 }
 
-#mm_card {
-  right: -10px;
-}
-
 .personName {
-  font-size: 26px;
+  font-size: 130%;
   color: #534747e3;
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
-}
-
-#mm {
-  font-size: 23px;
 }
 
 .personDesc {
@@ -136,13 +116,9 @@
 }
 
 .textContainer {
-  padding-right: 10px;
-
-  position: absolute;
-  left: -10px;
-  top: 0;
-
+  width: 400px;
   text-align: left;
+  padding: 20px;
 }
 
 .addressTitle {
@@ -171,6 +147,7 @@
   box-shadow: 5px 5px 5px #7c6e6ea4;
 }
 
+
 /* Breakpoints */
 @media (max-width: 1730px) {
   .addressText {
@@ -182,17 +159,6 @@
   }
 }
 
-@media (max-width: 1700px) {
-  #mm-img {
-    width: 90%;
-  }
-}
-
-@media (max-width: 1615px) {
-  #harini {
-    width: 60%;
-  }
-}
 
 @media (max-width: 1590px) {
   .flexContainer {
@@ -204,13 +170,6 @@
     margin-top: 60px;
   }
 
-  #mm-img {
-    width: 100%;
-  }
-
-  #harini {
-    width: 50%;
-  }
 
   .meetLeftImages {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -245,11 +204,7 @@
 }
 
 @media (max-width: 1200px) {
-  .meetRightImages {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-    height: 1050px;
-  }
+
 
   .addressText {
     font-size: 20px;
@@ -269,31 +224,13 @@
   }
 }
 
-@media (max-width: 980px) {
-  .meetRightImages {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    grid-template-rows: repeat(5, minmax(0, 1fr)) minmax(0, 0.45fr);
-    height: 2900px;
-  }
-}
-
 @media (max-width: 875px) {
   .meetLeftImages {
     height: 120vw;
   }
 }
 
-@media (max-width: 760px) {
-  .meetRightImages {
-    grid-template-rows: repeat(5, minmax(0, 1fr)) minmax(0, 0.52fr);
-  }
-}
 
-@media (max-width: 733px) {
-  .meetRightImages {
-    grid-template-rows: repeat(5, minmax(0, 1fr)) minmax(0, 0.55fr);
-  }
-}
 
 @media (max-width: 575px) {
   .meetHead {
@@ -308,85 +245,10 @@
     object-position: 30% 0;
   }
 
-  .meetRightImages {
-    grid-template-rows: repeat(5, minmax(0, 1fr)) minmax(0, 0.7fr);
-    height: 2500px;
-  }
-}
-
-@media (max-width: 500px) {
-  .meetLeftImages {
-    padding: 0 30px;
-    grid-gap: 25px;
-  }
-
-  .meetHead {
-    font-size: 30px !important;
-    padding: 10px 20px;
-  }
-
-  .meetLeftImages {
-    grid-gap: 10px;
-    padding: 0 15px;
-  }
-
-  .meetRight {
-    margin-top: 15px;
-  }
-
-  .meetRightImages {
-    grid-gap: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 1000px;
-    grid-template-rows: repeat(5, minmax(0, 1fr)) minmax(0, 1.3fr);
-  }
-
-  .personName {
-    font-size: 16px !important;
-  }
-
-  .personDesc {
-    font-size: 16px !important;
-  }
-
-  #mm_card {
-    right: 0;
-  }
-
-  .addressTitle {
-    font-size: 18px;
-    padding-bottom: 10px;
-  }
-
-  .addressText {
-    font-size: 16px;
-    padding-top: 0;
-  }
-
-  .footerPhone {
-    font-size: 16px !important;
-  }
-
-  .mt4ish {
-    margin-top: 7px;
-  }
 
   .textContainer {
-    width: 100%;
-    padding-top: 10px;
-    padding-right: 0;
-    padding-left: 15px;
-  }
-
-  .imgContainer > img {
-    object-fit: contain !important;
-    object-position: 0 20% !important;
-  }
-}
-
-@media (max-width: 358px) {
-  .meetRightImages {
-    grid-template-rows: repeat(5, minmax(0, 1fr)) minmax(0, 1.6fr);
+    width: 300px;
+    text-align: left;
+    padding: 20px;
   }
 }

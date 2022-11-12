@@ -5,7 +5,7 @@
 }
 
 .eateriesTitle {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
   line-height: 1;
@@ -14,14 +14,14 @@
 }
 
 .eateriesContent {
-  font-size: 20px;
+  font-size: 16px;
   color: rgb(44, 44, 44);
   padding: 20px 10px;
   height: 30%;
 }
 
 .eateriesSubtext {
-  font-size: 30px;
+  font-size: 26px;
   padding-top: 20px;
   font-weight: 500;
   color: rgb(112, 95, 39);
@@ -37,7 +37,6 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(2, auto);
-  grid-gap: 40px;
 }
 
 .eatGridContainer > div {

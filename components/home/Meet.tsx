@@ -89,13 +89,16 @@ function Meet() {
 
         <div className={styles.meetRight}>
           <div className={styles.meetRightImages}>
-            <div>
+            <div style={{height:"300px", width: "420px" , margin: "10px"}}>
               <div className={styles.imgContainer}>
                 <Image
-                  height={'800px'}
+                height="300px"
+                width="200px"
                   src={customImages[0]}
                   id="mm-img"
                   alt={content.imgB.alt}
+                  className={styles.img}
+
                 />
               </div>
               <div className={styles.meetImgCard} id="mm_card">
@@ -107,13 +110,16 @@ function Meet() {
                 </div>
               </div>
             </div>
-            <div>
+            <div style={{height:"300px", width: "420px" , margin: "10px"}}>
               <div className={styles.imgContainer}>
                 <Image
-                height={'950px'}
+                  height="300px"
+                  width="200px"
                   src={customImages[1]}
                   id="vinoth"
                   alt={content.imgC.alt}
+                  className={styles.img}
+
                 />
               </div>
               <div className={styles.meetImgCard}>
@@ -123,13 +129,15 @@ function Meet() {
                 </div>
               </div>
             </div>
-            <div>
+            <div style={{height:"300px", width: "420px" , margin: "10px"}}>
               <div className={styles.imgContainer}>
                 <Image
-                height={'1100px'}
+                height="300px"
+                width="200px"
                   src={customImages[2]}
                   id="sajeesh"
                   alt={content.imgD.alt}
+                  className={styles.img}
                 />
               </div>
               <div className={styles.meetImgCard}>
@@ -139,13 +147,16 @@ function Meet() {
                 </div>
               </div>
             </div>
-            <div>
+            <div style={{height:"300px", width: "420px" , margin: "10px"}}>
               <div className={styles.imgContainer}>
                 <Image
-                height={'950px'}
+                height="300px"
+                width="200px"
                   src={customImages[3]}
                   id="prabhu"
                   alt={content.imgE.alt}
+                  className={styles.img}
+
                 />
               </div>
               <div className={styles.meetImgCard}>
@@ -155,9 +166,12 @@ function Meet() {
                 </div>
               </div>
             </div>
-            <div>
+            <div style={{height:"300px", width: "400px" , margin: "10px"}}>
               <div className={styles.imgContainer} id="harini">
-                <Image height={'600px'} src={customImages[4]} alt={content.imgF.alt} />
+                <Image  height="300px"
+                width="200px" src={customImages[4]} alt={content.imgF.alt} 
+                  className={styles.img}
+                  />
               </div>
               <div className={styles.meetImgCard}>
                 <div className={styles.personName}>Harini</div>

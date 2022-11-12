@@ -29,12 +29,12 @@ const content = {
 function Retails() {
   return (
     <div className="fluid-container retails-base" id="retails" >
-      <div className="retailsA" style={{marginLeft:"5%"}} >
-        <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}  >
+      <div className="retailsA" style={{marginLeft:"1%"}} >
+        <div style={{marginBottom:"20px", marginTop:"20px" , width:"100%", maxWidth:"620px" }}  >
           <Image
           className={custom.customImg}
-          width="550"
-          height="300"
+          width="600"
+          height="350"
             src="/images/customInteriors/retails/A.jpg"
             alt={content.imgA.alt}
           />
@@ -42,11 +42,11 @@ function Retails() {
             {content.imgA.front}
           </div>
         </div>
-        <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }} >
+        <div style={{marginBottom:"20px", marginTop:"20px" , width:"100%", maxWidth:"620px" }} >
           <Image
           className={custom.customImg}
-          width="550"
-          height="300"
+          width="600"
+          height="350"
             src="/images/customInteriors/retails/B.jpg"
             alt={content.imgB.alt}
           />
@@ -54,11 +54,11 @@ function Retails() {
             {content.imgB.front}
           </div>
         </div>
-        <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }} >
+        <div style={{marginBottom:"20px", marginTop:"20px" , width:"100%", maxWidth:"620px" }} >
           <Image
           className={custom.customImg}
-          width="550"
-          height="300"
+          width="600"
+          height="350"
             src="/images/customInteriors/retails/C.jpg"
             alt={content.imgC.alt}
           />
@@ -66,11 +66,11 @@ function Retails() {
             {content.imgC.front}
           </div>
         </div>
-        <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }} >
+        <div style={{marginBottom:"20px", marginTop:"20px" , width:"100%", maxWidth:"620px" }} >
           <Image
           className={custom.customImg}
-            width="550"
-            height="300"
+            width="600"
+            height="350"
             src="/images/customInteriors/retails/D.jpg"
             alt={content.imgD.alt}
           />

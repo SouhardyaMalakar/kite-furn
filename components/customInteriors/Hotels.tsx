@@ -6,7 +6,7 @@ const Hotels = () => {
   return (
     <div className={`fluid-container ${styles.hotelsBase}`} id="hotels">
       <div className={styles.hotelsContainer} >
-        <div className={styles.hotelsGridContainer} style={{ display: 'flex', flexDirection: 'column' , marginLeft:'25px'}}>
+        <div className={styles.hotelsGridContainer} style={{ display: 'flex', flexDirection: 'column' }}>
           <div className={styles.itemA}>
             <div className={styles.hotelsTitle}>Hotel Interiors</div>
             <div className={styles.hotelsContent}>
@@ -17,10 +17,10 @@ const Hotels = () => {
             </div>
           </div>
           <div style={{ display: 'flex', flexWrap:"wrap"}}>
-          <div className={`${styles.itemB} ${styles.gridItem}`}  style={{marginBottom:"50px" , marginTop:"50px" ,width:"90%", maxWidth:"600px" }}>
+          <div className={`${styles.itemB} ${styles.gridItem}`}  style={{marginBottom:"50px" , marginTop:"20px",width:"100%", maxWidth:"600px" }}>
             <Image
               className={styles.customImg}
-              width="550"
+              width="580"
               height="400"
               src="/images/customInteriors/hotels/A.jpg"
               alt="Reception and reception table with wall paneling in glass."
@@ -30,10 +30,10 @@ const Hotels = () => {
               guest would be delighted to go through it.
             </div>
           </div>
-          <div className={`${styles.itemC} ${styles.gridItem}`}  style={{marginBottom:"50px", marginTop:"50px"  , width:"90%", maxWidth:"600px" }}>
+          <div className={`${styles.itemC} ${styles.gridItem}`}  style={{marginBottom:"50px", marginTop:"20px" , width:"100%", maxWidth:"600px" }}>
             <Image
               className={styles.customImg}
-              width="550"
+              width="580"
               height="400"
               src="/images/customInteriors/hotels/B.jpg"
               alt="Cozy guest room interiors with walnut and teakwood cot."
@@ -43,10 +43,10 @@ const Hotels = () => {
               comforting as in this room.
             </div>
           </div>
-          <div className={`${styles.itemD} ${styles.gridItem}`}  style={{marginBottom:"50px", marginTop:"50px"  , width:"90%", maxWidth:"600px" }}>
+          <div className={`${styles.itemD} ${styles.gridItem}`}  style={{marginBottom:"50px", marginTop:"20px" , width:"100%", maxWidth:"600px" }}>
             <Image
               className={styles.customImg}
-              width="550"
+              width="580"
               height="400"
               src="/images/customInteriors/hotels/C.jpg"
               alt="Reception with custom built wooden light fixture."
@@ -56,10 +56,10 @@ const Hotels = () => {
               casual meetings.
             </div>
           </div>
-          <div className={`${styles.itemE} ${styles.gridItem}`}  style={{marginBottom:"50px", marginTop:"50px"  , width:"90%", maxWidth:"600px" }}>
+          <div className={`${styles.itemE} ${styles.gridItem}`}  style={{marginBottom:"50px", marginTop:"20px" , width:"100%", maxWidth:"600px" }}>
             <Image
               className={styles.customImg}
-              width="550"
+              width="580"
               height="400"
               src="/images/customInteriors/hotels/D.jpg"
               alt="Guest bedroom with twin cot, which can be converted to double bed."
@@ -68,10 +68,10 @@ const Hotels = () => {
               This spacious guestroom is exotically cozy for its guests.
             </div>
           </div>
-          <div className={`${styles.itemE} ${styles.gridItem}`}  style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+          <div className={`${styles.itemE} ${styles.gridItem}`}  style={{marginBottom:"50px", marginTop:"20px", width:"100%", maxWidth:"600px" }}>
             <Image
               className={styles.customImg}
-              width="550"
+              width="580"
               height="400"
               src="/images/customInteriors/hotels/roomNumber.jpg"
             alt="We have best interior and furniture products for hotels"

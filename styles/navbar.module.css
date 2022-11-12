@@ -4,7 +4,8 @@
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(to left, #247dbe, #71bcf1);
-  min-height: 75px;
+  min-height: 60px;
+
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -31,6 +32,7 @@ margin: 10px;
   padding-right: 10px;
   padding-left: 10px;
   color: white;
+  height: 90%;
 }
 .navbutt2{
   min-height: 20px;
@@ -52,9 +54,9 @@ margin: 10px;
   background: rgb(127, 69, 21);
   color: white;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.187);
-  padding: 10px;
   outline: none;
   border: none;
+
 }
 
 .dropdown {

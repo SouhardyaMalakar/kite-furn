@@ -26,16 +26,16 @@ const content = {
 function Offices() {
   return (
     <div className="fluid-container offices-base" id="offices">
-      <div className="offices-grid-container"  style ={{display: 'flex', flexDirection:"column" , marginLeft:"30px" }}>
+      <div className="offices-grid-container"  style ={{display: 'flex', flexDirection:"column" }}>
         <div className="title gridItem">,
           <div className="offices-title">OFFICE SPACES</div>
           <div className="offices-content">{content.subtext}</div>
         </div>
         <div className="longImg gridItem" style ={{display: 'flex',  flexWrap:"wrap" }}>
-          <div style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+          <div style={{marginBottom:"50px", marginTop:"50px" , width:"100%", maxWidth:"610px" }}>
           <Image
           className={custom.customImg}
-            width="500px"
+            width="590px"
             height="400px"
             src="/images/customInteriors/offices/A.jpg"
             alt={content.imgA.alt}
@@ -44,10 +44,10 @@ function Offices() {
             {content.imgA.front}
           </div>
           </div>
-        <div className="imgA gridItem" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div style={{marginBottom:"50px", marginTop:"50px" , width:"100%", maxWidth:"610px" }}>
           <Image
           className={custom.customImg}
-            width="500"
+            width="590"
             height="400"
             src="/images/customInteriors/offices/B.jpg"
             alt={content.imgB.alt}
@@ -56,10 +56,10 @@ function Offices() {
             {content.imgB.front}
           </div>
         </div>
-        <div className="imgB gridItem" style={{marginBottom:"50px", marginTop:"50px" , width:"90%", maxWidth:"600px" }}>
+        <div style={{marginBottom:"50px", marginTop:"50px" , width:"100%", maxWidth:"610px" }}>
           <Image
           className={custom.customImg}
-            width="500"
+            width="590"
             height="400"
             src="/images/customInteriors/offices/C.jpg"
             alt={content.imgC.alt}

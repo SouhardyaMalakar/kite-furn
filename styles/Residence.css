@@ -31,12 +31,12 @@
 
 .residencesB {
   width: 40%;
-
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
   padding-left: 30px;
+  
 }
 
 .residences-title {
