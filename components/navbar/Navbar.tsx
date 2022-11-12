@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../../styles/navbar.module.css';
 import { useColorMode } from '@chakra-ui/react';
-import NextLink from 'next/link';
 import router, { useRouter } from 'next/router';
+import  DropDown  from './DropDown'
 function Navbar() {
   const [win, setWin] = useState(1200);
-  const { colorMode, toggleColorMode } = useColorMode();
-  const isDark = colorMode === 'dark';
-  const [display, changeDisplay] = useState('none');
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -57,14 +54,9 @@ function Navbar() {
           >
             Moduler Kitchen
           </button>
-          <button
-            className={styles.navbutt}
-            onClick={() => {
-              router.push('/customInteriors/#residence');
-            }}
-          >
-            Customised Interiors
-          </button>
+
+          <DropDown/>
+
         </div>
         <div className={styles.nvLf}>
           <button className={styles.navbutt}>
@@ -132,14 +124,9 @@ function Navbar() {
           >
             <li>Moduler Kitchen</li>
           </button>
-          <button
-            className={styles.navbutt2}
-            onClick={() => {
-              router.push('/customInteriors/#residence');
-            }}
-          >
-            <li>Customised Interiors</li>
-          </button>
+          <div>
+            <li><DropDown/></li>
+            </div>
           <button className={styles.navbutt2}>
             <li>Contact</li>
           </button>
