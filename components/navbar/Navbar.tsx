@@ -102,7 +102,7 @@ function Navbar() {
     return (
       <div
         className={styles.menuToggle}
-        style={{ height: '70px', width: '100%', zIndex: '100' }}
+        style={{ height: '60px', width: '100%', zIndex: '100' }}
       >
         <input type="checkbox" />
         <span></span>
@@ -125,58 +125,113 @@ function Navbar() {
           >
             <li>Moduler Kitchen</li>
           </button>
-          <div  style={{ minHeight: '50px',  background: "linear-gradient(135deg, #a9d3f1, #82beec)", marginLeft: '2%', borderRadius : "10px"}}>
-            
-          
-            <Collapsible trigger="Customised Interiors"  triggerStyle={{ width : "100%", height: "50px", background: 'linear-gradient(135deg, #a9d3f1, #82beec)', paddingTop : "10px", paddingLeft : "10px", fontSize : "20px", borderRadius : "10px", color : "white"}} >
-                <button
-            onClick={() => {
-              router.push('/customInteriors/#hotels');
+          <div
+            style={{
+              minHeight: '50px',
+              background: 'linear-gradient(135deg, #a9d3f1, #82beec)',
+              boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.187)',
+              margin: '5px',
+              borderRadius: '5px',
+              marginBottom: " 20px"
             }}
-            style={{ height:"50px", width : "100%", background: 'linear-gradient(135deg, #a9d3f1, #82beec)', border: '0px', color:"white" }}
           >
-            Hotel Interiors
-          </button> 
+            <Collapsible
+              trigger="Customised Interiors"
+              triggerStyle={{
+                background: 'rgba(0,0,0,0)',
+                width: '100%',
+                minHeight: '50px',
+                paddingTop: '10px',
+                paddingLeft: '10px',
+                fontSize: '18px',
+                borderRadius: '10px',
+                color: 'white'
+              }}
+            >
               <button
-            onClick={() => {
-              router.push('/customInteriors/#eateries');
-            }}
-            style={{ height:"50px", width : "100%", background: 'linear-gradient(135deg, #a9d3f1, #82beec)', border: '0px', color:"white" }}
-          >
-            Bakeries
-          </button> 
+                onClick={() => {
+                  router.push('/customInteriors/#hotels');
+                }}
+                style={{
+                  height: '50px',
+                  width: '100%',
+                  background: '#82beec',
+                  border: '0px',
+                  color: 'white'
+                }}
+              >
+                Hotel Interiors
+              </button>
               <button
-            onClick={() => {
-              router.push('/customInteriors/#retails');
-            }}
-            style={{ height:"50px", width : "100%", background: 'linear-gradient(135deg, #a9d3f1, #82beec)', border: '0px',color:"white" }}
-          >
-            Departmentals Store
-          </button> 
-            <button
-            onClick={() => {
-              router.push('/customInteriors/#halls');
-            }}
-            style={{ height:"50px", width : "100%", background: 'linear-gradient(135deg, #a9d3f1, #82beec)', border: '0px', color:"white" }}
-          >
-            Banquet & Meeting Halls
-          </button> 
+                onClick={() => {
+                  router.push('/customInteriors/#eateries');
+                }}
+                style={{
+                  height: '50px',
+                  width: '100%',
+                  background: '#82beec',
+                  border: '0px',
+                  color: 'white'
+                }}
+              >
+                Bakeries
+              </button>
               <button
-            onClick={() => {
-              router.push('/customInteriors/#offices');
-            }}
-            style={{ height:"50px", width : "100%", background: 'linear-gradient(135deg, #a9d3f1, #82beec)', border: '0px', color:"white" }}
-          >
-            Offices
-          </button> 
+                onClick={() => {
+                  router.push('/customInteriors/#retails');
+                }}
+                style={{
+                  height: '50px',
+                  width: '100%',
+                  background: '#82beec',
+                  border: '0px',
+                  color: 'white'
+                }}
+              >
+                Departmentals Store
+              </button>
               <button
-            onClick={() => {
-              router.push('/customInteriors');
-            }}
-            style={{ height:"50px", width : "100%", background: 'linear-gradient(135deg, #a9d3f1, #82beec)', border: '0px', color:"white" }}
-          >
-            View More
-          </button> 
+                onClick={() => {
+                  router.push('/customInteriors/#halls');
+                }}
+                style={{
+                  height: '50px',
+                  width: '100%',
+                  background: '#82beec',
+                  border: '0px',
+                  color: 'white'
+                }}
+              >
+                Banquet & Meeting Halls
+              </button>
+              <button
+                onClick={() => {
+                  router.push('/customInteriors/#offices');
+                }}
+                style={{
+                  height: '50px',
+                  width: '100%',
+                  background: '#82beec',
+                  border: '0px',
+                  color: 'white'
+                }}
+              >
+                Offices
+              </button>
+              <button
+                onClick={() => {
+                  router.push('/customInteriors');
+                }}
+                style={{
+                  height: '50px',
+                  width: '100%',
+                  background: '#82beec',
+                  border: '0px',
+                  color: 'white'
+                }}
+              >
+                View More
+              </button>
             </Collapsible>
           </div>
           <button className={styles.navbutt2}>
