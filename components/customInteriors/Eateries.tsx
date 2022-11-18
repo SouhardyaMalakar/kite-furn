@@ -48,7 +48,7 @@ function Eateries() {
             src="/images/customInteriors/eateries_bakeries/A.JPG"
             alt={content.imgA.alt}
           />
-          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"100%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"100%", maxWidth:"600px", marginTop :'-70px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgA.front}
           </div>
         </div>
@@ -70,7 +70,7 @@ function Eateries() {
             src="/images/customInteriors/eateries_bakeries/B.JPG"
             alt={content.imgB.alt}
           />
-          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"600px", marginTop :'-70px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgB.front}
           </div>
         </div>
@@ -83,7 +83,7 @@ function Eateries() {
             src="/images/customInteriors/eateries_bakeries/C.JPG"
             alt={content.imgC.alt}
           />
-          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"600px", marginTop :'-70px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgC.front}
           </div>
         </div>
@@ -96,7 +96,7 @@ function Eateries() {
             src="/images/customInteriors/eateries_bakeries/D.JPG"
             alt={content.imgD.alt}
           />
-          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"600px", marginTop :'-70px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgD.front}
           </div>
         </div>
@@ -108,7 +108,7 @@ function Eateries() {
             src="/images/customInteriors/eateries_bakeries/E.JPG"
             alt={content.imgE.alt}
           />
-          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"600px", marginTop :'-70px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgE.front}
           </div>
         </div>

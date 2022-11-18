@@ -31,8 +31,8 @@ const content = {
 function Residence() {
   return (
     <div className="fluid-container residences-base" id="residence"  >
-      <div className="residencesA" style ={{display: 'flex',  flexWrap:"wrap"  , marginBottom:"40px"}}>
-        <div style={{marginBottom:"40px",  marginTop:"0px" , width:"100%", maxWidth:"620px" }}>
+      <div className="residencesA" style ={{display: 'flex',  flexWrap:"wrap"  , marginBottom:"20px"}}>
+        <div style={{marginBottom:"20px",  marginTop:"0px" , width:"100%", maxWidth:"620px" }}>
           <Image
            className={styles.customImg}
             width="590"
@@ -40,11 +40,11 @@ function Residence() {
             src="/images/customInteriors/residence_interiors/A.jpg"
             alt={content.imgA.alt}
           />
-          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"600px", marginTop :'-70px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgA.front}
           </div>
         </div>
-        <div style={{marginBottom:"40px",  marginTop:"0px" , width:"100%", maxWidth:"620px" }}>
+        <div style={{marginBottom:"20px",  marginTop:"0px" , width:"100%", maxWidth:"620px" }}>
           <Image
            className={styles.customImg}
            width="590"
@@ -52,11 +52,11 @@ function Residence() {
             src="/images/customInteriors/residence_interiors/B.jpg"
             alt={content.imgB.alt}
           />
-          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"600px", marginTop :'-70px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgB.front}
           </div>
         </div>
-        <div style={{marginBottom:"40px",  marginTop:"0px" , width:"100%", maxWidth:"620px" }}>
+        <div style={{marginBottom:"20px",  marginTop:"0px" , width:"100%", maxWidth:"620px" }}>
           <Image
            className={styles.customImg}
            width="590"
@@ -64,11 +64,11 @@ function Residence() {
             src="/images/customInteriors/residence_interiors/C.jpg"
             alt={content.imgC.alt}
           />
-          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"600px", marginTop :'-70px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgC.front}
           </div>
         </div>
-        <div style={{marginBottom:"40px",  marginTop:"0px" , width:"100%", maxWidth:"620px" }}>
+        <div style={{marginBottom:"20px",  marginTop:"0px" , width:"100%", maxWidth:"620px" }}>
           <Image
            className={styles.customImg}
            width="590"
@@ -76,7 +76,7 @@ function Residence() {
             src="/images/customInteriors/residence_interiors/D.jpg"
             alt={content.imgD.alt}
           />
-          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"500px", marginTop :'-90px' , zIndex :'100', marginLeft:'5%'}}>
+          <div style ={{ fontSize:"13px", position:'relative',color : "white", width:"90%", maxWidth:"600px", marginTop :'-70px' , zIndex :'100', marginLeft:'5%'}}>
             {content.imgD.front}
           </div>
         </div>
